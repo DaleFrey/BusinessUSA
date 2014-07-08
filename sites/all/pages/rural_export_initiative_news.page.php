@@ -1,0 +1,1 @@
+<?php print views_embed_view('Rural Export Initiatives News', 'rural_export_initiative_news_page_main'); ?>

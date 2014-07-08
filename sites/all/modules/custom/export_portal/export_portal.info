@@ -1,0 +1,5 @@
+name = Export Portal
+description = Handels site-ripping and contains templates for showing content pages, from export.gov
+package = REI
+core = 7.x
+files[] = export_portal.module

@@ -1,0 +1,1 @@
+<?php print views_embed_view('fact-sheets-and-announcements', 'annoucements_and_resources_page_main'); ?>

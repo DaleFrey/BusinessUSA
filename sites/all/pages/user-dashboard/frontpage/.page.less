@@ -1,0 +1,961 @@
+#titleWrapper {
+    display: none;
+}
+    .userdashboard-mastercontainer .userdashboard-section-container .userdashboard-section-titlebar .userdashboard-section-titlebar-widget{
+        float:none;
+    }
+.userdashboard-mastercontainer {
+    h1.welcome-header{
+        font-family: 'latoregular', sans-serif;
+        font-size: 22px;
+        margin:0px;
+        span{
+            font-family:'latoblack_italic', sans-serif;
+        }
+    }
+    .progsserv-all,
+    .myusa-blogs-viewall,
+    .userdashboard-faqs-viewall,
+    .button-viewall,
+    .parature-viewalltickets,
+    .parature-createtickets-container a,
+    .pastsearches-list + a{
+        display:block;
+        width:auto;
+        line-height: 40px;
+        background-color: #eff2f5;
+        color:#6885a2;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-family: latoblack, sans-serif;
+        padding:0px 10px;
+        margin:0;
+        float:right;
+        border:none;
+        cursor:pointer;
+    }
+    .parature-createtickets-container,
+    .parature-viewalltickets-container{
+        float:right;
+        clear:both;
+    }
+    .parature-viewalltickets-container{
+        margin-top:10px;
+    }
+
+    .userdashboard-section-container {
+        margin: 20px 0px;
+        background-color:#fff;
+        float:left;
+        width:100%;
+        position:relative;
+        padding-bottom:40px;
+        .userdashboard-section-body > a{
+            position:absolute;
+            bottom:20px;
+            right:20px;
+        }
+        .userdashboard-section-titlebar {
+            background-color: #6885a2;
+            color: white;
+            float:left;
+            clear:both;
+            width:100%;
+            position:relative;
+            .userdashboard-section-titlebar-title {
+                float: left;
+                padding:0px 65px 0px 20px;
+            }
+            .userdashboard-section-titlebar-widget {
+                float: right;
+                a{
+                    color:#fff;
+                    line-height: 56px;
+                    margin-right: 20px;
+
+                }
+            }
+            .userdashboard-section-titlebar-widget.notificationsbell-container{
+                a{
+                    position:absolute;
+                    line-height: normal;
+                    margin:10px 20px 0px 0px;
+                    top:0px;
+                    right:0px;
+                    display:block;
+                    height:29px;
+                    width:32px;
+                    background: transparent url('/sites/all/themes/bizusa/images/myUSAimgs/bell-image.png') no-repeat bottom left;
+                    text-indent: -99999px;
+                    span{
+                        display:block;
+                        text-indent: 0px;
+                        float:right;
+                        font-size: 10px;
+                        line-height: 8px;
+                        text-align: center;
+                        color:#205589;
+                        background-color: #97e8c1;
+                        height:8px;
+                        width:8px;
+                        padding:4px;
+                        -moz-border-radius: 8px;    /* Firefox 3.6-, removed in Firefox 13 */
+                        -webkit-border-radius: 8px; /* Safari 4-, Chrome 3- */
+                        border-radius: 8px;
+
+                    }
+                }
+            }
+            .expandcollapse-container {
+                float: right;
+                position:absolute;
+                top:0px;
+                right:0px;
+                img {
+                    padding: 20px;
+                }
+            }
+            &.expanded .expandcollapse-container .collapsed-icon,
+            &.collapsed .expandcollapse-container .expanded-icon {
+                display: none;
+            }
+        }
+        .userdashboard-section-body{
+            padding:20px;
+            float:left;
+            clear:both;
+        }
+        &.userdashboard-section-container-tiles {
+            .tiles-and-leftright-navigation-container {
+                display:block;
+                float:left;
+                padding-top:8px;
+                &.tiles-not-paged .tiles-pagesnavigation {
+                    visibility: hidden
+                }
+                .tiles-pagesnavigation{
+                    display:block;
+                    height:30px;
+                    width:13px;
+                    margin:105px 10px 0px 10px;
+                    float:left;
+                }
+                .tiles-pages-container {
+                    display:block;
+                    float:left;
+                    width:523px;
+                    height:240px;
+                    margin:0px 30px;
+                    position: relative;
+                    ul.tiles-pages-page {
+                        overflow: hidden;
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        padding-left:0px;
+                        width:100%;
+                        li.tiles-tile {
+                            display: block;
+                            float: left;
+                            width: 48%;
+                            margin: 0px 1% 3px 1%;
+                            height:50px;
+                            background-color: #eff2f5;
+                            font-family: 'latoblack', sans-serif;
+                            .wizard-icon {
+                                height: 36px;
+                                width: 36px;
+                                float: left;
+                                background-size: 25px;
+                                margin:7px 6px 0px 12px;
+                            }
+                            .tile-wizardtitle{
+                                display:block;
+                                margin-top:17px;
+                            }
+                        }
+                        li.tiles-tile.tiles-tile-tilename-accessfinancing .wizard-icon{
+                            background: transparent url('/sites/all/themes/bizusa/images/myUSAimgs/myUSApngs-accessfinancing-blue.png') no-repeat 0px 0px;
+                        }
+                        li.tiles-tile.tiles-tile-tilename-beginexporting .wizard-icon{
+                            background: transparent url('/sites/all/themes/bizusa/images/myUSAimgs/myUSApngs-beginexporting-blue.png') no-repeat 0px 0px;
+                        }
+                        li.tiles-tile.tiles-tile-tilename-educationportal .wizard-icon{
+                            background: transparent url('/sites/all/themes/bizusa/images/myUSAimgs/myUSApngs-educationportal-blue.png') no-repeat 0px 0px;
+                        }
+                        li.tiles-tile.tiles-tile-tilename-expandexporting .wizard-icon{
+                            background: transparent url('/sites/all/themes/bizusa/images/myUSAimgs/myUSApngs-expandexporting-blue.png') no-repeat 0px 0px;
+                        }
+                        li.tiles-tile.tiles-tile-tilename-exploreexporting .wizard-icon{
+                            background: transparent url('/sites/all/themes/bizusa/images/myUSAimgs/myUSApngs-exploreexporting-blue.png') no-repeat 0px 0px;
+                        }
+                        li.tiles-tile.tiles-tile-tilename-findopportunities .wizard-icon{
+                            background: transparent url('/sites/all/themes/bizusa/images/myUSAimgs/myUSApngs-findingopportunities-blue.png') no-repeat 0px 0px;
+                        }
+                        li.tiles-tile.tiles-tile-tilename-findgreenopportunities .wizard-icon{
+                            background: transparent url('/sites/all/themes/bizusa/images/myUSAimgs/myUSApngs-greenopportunities-blue.png') no-repeat 0px 0px;
+                        }
+                        li.tiles-tile.tiles-tile-tilename-growyourbusiness .wizard-icon{
+                            background: transparent url('/sites/all/themes/bizusa/images/myUSAimgs/myUSApngs-growingyourbusiness-blue.png') no-repeat 0px 0px;
+                        }
+                        li.tiles-tile.tiles-tile-tilename-helpwithhiringemployees .wizard-icon{
+                            background: transparent url('/sites/all/themes/bizusa/images/myUSAimgs/myUSApngs-helpwithhiring-blue.png') no-repeat 0px 0px;
+                        }
+                        li.tiles-tile.tiles-tile-tilename-investintheusa .wizard-icon{
+                            background: transparent url('/sites/all/themes/bizusa/images/myUSAimgs/myUSApngs-investintheusa-blue.png') no-repeat 0px 0px;
+                        }
+                        li.tiles-tile.tiles-tile-tilename-learnaboutnewhealthcarechanges .wizard-icon{
+                            background: transparent url('/sites/all/themes/bizusa/images/myUSAimgs/myUSApngs-learnaboutnewhealthcare-blue.png') no-repeat 0px 0px;
+                        }
+                        li.tiles-tile.tiles-tile-tilename-learnabouttaxesandcredits .wizard-icon{
+                            background: transparent url('/sites/all/themes/bizusa/images/myUSAimgs/myUSApngs-learnabouttaxes-blue.png') no-repeat 0px 0px;
+                        }
+                        li.tiles-tile.tiles-tile-tilename-findregulations .wizard-icon{
+                            background: transparent url('/sites/all/themes/bizusa/images/myUSAimgs/myUSApngs-regulations-blue.png') no-repeat 0px 0px;
+                        }
+                        li.tiles-tile.tiles-tile-tilename-seekdisasterassistance .wizard-icon{
+                            background: transparent url('/sites/all/themes/bizusa/images/myUSAimgs/myUSApngs-seekdisasterassistance-blue.png') no-repeat 0px 0px;
+                        }
+                        li.tiles-tile.tiles-tile-tilename-startabusiness .wizard-icon{
+                            background: transparent url('/sites/all/themes/bizusa/images/myUSAimgs/myUSApngs-startabusiness-blue.png') no-repeat 0px 0px;
+                        }
+                        li.tiles-tile.tiles-tile-tilename-takeatour .wizard-icon{
+                            background: transparent url('/sites/all/themes/bizusa/images/myUSAimgs/myUSApngs-takeatour-blue.png') no-repeat 0px 0px;
+                        }
+                        li.tiles-tile.tiles-tile-tilename-browseresourcesforveterans .wizard-icon{
+                            background: transparent url('/sites/all/themes/bizusa/images/myUSAimgs/myUSApngs-veterans-blue.png') no-repeat 0px 0px;
+                        }
+
+                    }
+                }
+            }
+            .bottom-dot-navigation-container{
+                display:block;
+                width:58px;
+                margin:auto;
+                clear:both;
+                a{
+                    display:block;
+                    float:left;
+                    text-indent: -99999;
+                    font-size: 1px;
+                    height:17px;
+                    width:17px;
+                    margin:0px 6px 25px 6px;
+                    background: transparent url('/sites/all/themes/bizusa/images/myUSAimgs/myUSA-inactiveDot.png') no-repeat 0px 0px;
+                }
+                a.active{
+                    background: transparent url('/sites/all/themes/bizusa/images/myUSAimgs/myUSA-activeDot.png') no-repeat 0px 0px;
+                }
+            }
+        }
+    }
+    .userdashboard-section-container-tiles,
+    .userdashboard-section-container-progserv,
+    .userdashboard-section-container-resevents{
+        width:690px;
+        margin: 20px 10px 20px 0px;
+        float:left;
+        clear:none;
+    }
+    .userdashboard-section-container-support,
+    .userdashboard-section-container-searches,
+    .userdashboard-section-container-blog{
+        width:260px;
+        float:left;
+        clear:none;
+    }
+    .userdashboard-section-container-tiles{
+        padding-bottom:0px;
+    }
+    .userdashboard-section-container-support{
+        padding-bottom:0px;
+        .userdashboard-section-body{
+            position:relative;
+            width:220px;
+            .userdashboard-section-subbody-notifications{
+                position:absolute;
+                top:0px;
+                left:0px;
+                z-index: 99;
+                background-color: #97e8c1;
+                color:#205589;
+                width:220px;
+                padding:20px;
+                ul{
+                    list-style-type: none;
+                    padding:0px;
+                    margin:0px;
+                    li{
+                        margin:0px 0px 20px 0px;
+                    }
+                }
+                a{
+                    color:#205589;
+                }
+                .notifications-closeicon{
+                    display:block;
+                    height:14px;
+                    width:14px;
+                    text-indent: -99999px;
+                    float:right;
+                    clear:both;
+                    background: transparent url('/sites/all/themes/bizusa/images/myUSAimgs/notification-close.png') no-repeat 0px 0px;
+                }
+                .notifications-notecount {
+                    background-color: #1a4168; /* change this to background image, show a green circle */
+                    color:#fff;
+                    display: block;
+                    float: left;
+                    height:14px;
+                    width:14px;
+                    line-height: 14px;
+                    padding:7px;
+                    -moz-border-radius: 14px;    /* Firefox 3.6-, removed in Firefox 13 */
+                    -webkit-border-radius: 14px; /* Safari 4-, Chrome 3- */
+                    border-radius: 14px;
+                    text-align: center;
+                }
+                .notifications-headingtitle{
+                    line-height: 30px;
+                    padding-left: 5px;
+                }
+            }
+
+        }
+
+        .userdashboard-section-titlebar-widget{ 
+            a{
+
+            }
+        }
+        .parature-ticket{
+            position:relative;
+            .parature-information-container{
+                margin-right:60px;
+                margin-bottom:20px;
+            }
+            .parature-ticket-status-closed{
+                display:block;
+                background-color: #eff2f5;
+                color:#6885a2;
+                text-transform: uppercase;
+                font-size: 12px;
+                padding:5px;
+                margin:0;
+                float:right;
+                position:absolute;
+                top:0px;
+                right:0px;
+            }
+            .parature-ticket-status-open{
+                display:block;
+                background-color: #97e8c1;
+                color:#1a4168;
+                text-transform: uppercase;
+                font-size: 12px;
+                padding:5px;
+                margin:0;
+                float:right;
+                position:absolute;
+                top:0px;
+                right:0px;
+            }
+        }
+    }
+
+    .userdashboard-section-container-progserv{
+        ul{
+            list-style-type: none;
+            padding-left:15px;
+            float:left;
+            clear:both;
+            width:100%;
+            li{
+                position:relative;
+                float:left;
+                width:30%;
+                margin-right:3%;
+                img{
+                    position: absolute;
+                    top:0px;
+                    left:0px;
+                    height:23px;
+                    width:23px;
+                }
+                > div{
+                    margin-left: 43px;
+                }
+            }
+        }
+        .progsserv-all{
+            float:right;
+            clear:both;
+        }
+    }
+
+
+
+    /* Resources and Events */
+    .userdashboard-section-container-resevents{
+        position:relative;
+        .resevents-titlebar-container,
+        .resevents-googlemap-container,
+        .resevents-list-container{
+            float:left;
+            clear:both;
+            width:100%;
+        }
+        .reqappt-viewall-buttoncontainer{
+            padding:0px;
+            float:left;
+            clear:both;
+            display:block;
+            width:100%;
+            position:absolute;
+            bottom:20px;
+            a{
+                float:right;
+                margin:0px 20px 0px 0px;
+            }
+        }
+        .userdashboard-section-body{
+            padding:0px;
+            width:100%;
+        }
+        #map-canvas{
+            height:280px !important;
+        }
+        #locationsList{
+            width:650px;
+            padding:20px 20px 0px 20px;
+            background-color:#fff;
+            h2{
+                margin-top:0px;
+                padding-top:0px;
+                margin-bottom:10px;
+
+            }
+            .view{
+                float:left;
+                width:200px;
+                margin:0px 5px;
+
+                .views-row{
+
+                  min-height: 16px;
+                  margin-bottom:20px;
+                  .views-field{
+                    margin-bottom: 5px;
+                  }
+                  .views-field-php{
+                    margin-top: 12px;
+                  }
+                }
+                a{
+                    text-decoration: none;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .view-display-id-front_page_events{
+                input{
+                    height:15px;
+                    width:15px;
+                    border:0px;
+                    cursor: pointer;
+                }
+                .calendaricon-yahoo{
+                    background: transparent url('/sites/all/themes/bizusa/images/cal-yahoo.jpg') no-repeat 0px 0px;
+                }
+                .calendaricon-outlook{
+                    background: transparent url('/sites/all/themes/bizusa/images/cal-outlook.jpg') no-repeat 0px 0px;
+                }
+                .calendaricon-gmail{
+                    background: transparent url('/sites/all/themes/bizusa/images/cal-google.jpg') no-repeat 0px 0px;
+                }
+            }
+        }
+        .userdashboard-section-titlebar{
+
+
+            .zipSearch{
+                float:right;
+
+                #mapView{
+                  background: url('/sites/all/themes/bizusa/images/map_icon.png') no-repeat;
+                  text-indent: -9999px;
+                  display: block;
+                  min-height: 25px;
+                  min-width: 19px;
+                  float:left;
+                  margin-top: 17px;
+                  margin-right: 23px;
+                  cursor: pointer;
+                }
+              #listView{
+                  background: url('/sites/all/themes/bizusa/images/list_icon.png') no-repeat;
+                  text-indent: -9999px;
+                  display: block;
+                  min-height: 25px;
+                  min-width: 19px;
+                  float:left;
+                  margin-top: 17px;
+                  margin-right: 23px;
+                  cursor: pointer;
+              }
+              input[type=textbox]{
+                margin-top: 10px;
+                padding: 10px;
+                border: 0;
+                margin-right: 0;
+                display: block;
+                float: left;
+                font-family: 'latoitalic', sans-serif;
+                font-size: 14px;
+                color: #757575;
+              }
+              input[type=button]{
+                border: 0;
+                border-radius: 0;
+                -moz-border-radius: 0;
+                -webkit-border-radius: 0;
+                background-color: #f75b49;
+                padding: 9px 10px;
+                margin: 10px 10px 0 0;
+                display: block;
+                float: right;
+                font-family: "latoblack",sans-serif;
+                color:#fff;
+                font-size: 16px;
+                cursor: pointer;
+                font-weight: normal;
+                height: 38px;
+                text-transform: uppercase;
+                &:hover{
+                    background-color: darken(#F75B49, 10%)
+                }
+              }
+            }
+        }
+    }
+
+    .userdashboard-section-container-resevents .userdashboard-section-titlebar,
+    .userdashboard-section-container-blog .userdashboard-section-titlebar,
+    .userdashboard-section-container-faq .userdashboard-section-titlebar{
+        background-color: #a7a9ac;
+    }
+
+    .userdashboard-section-container-searches,
+    .userdashboard-section-container-blog{
+        ul{
+            margin:0px;
+            padding:0px;
+            list-style-type: none;
+            li{
+                margin-bottom:20px;
+                h3{
+                    font-size:14px;
+                }
+
+            }
+            .pastsearches-listitem{
+                float:left;
+                clear:both;
+                width:220px;
+                .pastsearches-searchterm{
+                    display:block;
+                    float:left;
+                    width:190px;
+                }
+                .pastsearches-newcount{
+                    display:block;
+                    float:right;
+                    font-family: 'latoblack';
+                    font-size: 12px;
+                    text-align: center;
+                color:#205589;
+                background-color: #97e8c1;
+                height:12px;
+                width:12px;
+                padding:6px;
+                -moz-border-radius: 12px;    /* Firefox 3.6-, removed in Firefox 13 */
+                -webkit-border-radius: 12px; /* Safari 4-, Chrome 3- */
+                border-radius: 12px;
+                }
+            }
+            .myusa-blogs-item{
+                position:relative;
+                img{
+                    position:absolute;
+                    top:0px;
+                    left:0px;
+                    height:24px;
+                    width:24px;
+                }
+                .myusa-blogs-item-titlesnippetreadmore{
+                    padding-left:34px;
+                }
+            }
+        }
+    }
+
+    .userdashboard-section-container-faq{
+        .userdashboard-section-body{
+            width:920px;
+            float:left;
+            clear:none;
+            ul{
+                padding:0px;
+                margin:0px;
+                list-style-type: none;
+                float:left;
+                clear:both;
+                width:100%;
+                li{
+                    float:left;
+                    width:23%;
+                    margin-left:2.6%;
+                    margin-bottom:20px;
+                }
+                li:first-child{
+                    margin-left:0px;
+                }
+            }
+            .userdashboard-faqs-viewall{
+                float:right;
+            }
+        }
+    }
+
+
+
+
+
+    /**************************
+     ***                   ****
+     ***   TABLET STYLES   ****
+     ***                   ****
+     **************************/
+
+    @media only screen and (min-width:768px) and (max-width:1024px){
+        .userdashboard-section-container-tiles,
+        .userdashboard-section-container-progserv,
+        .userdashboard-section-container-resevents{
+            width:547px;
+            margin: 20px 10px 20px 0px;
+            float:left;
+            clear:none;
+        }
+        .userdashboard-section-container-support,
+        .userdashboard-section-container-searches,
+        .userdashboard-section-container-blog{
+            width:210px;
+            float:left;
+            clear:none;
+        }
+        .userdashboard-section-container-support{
+            .userdashboard-section-body{
+                width:170px;
+                .userdashboard-section-subbody-notifications{
+                    width:170px !important;
+                }
+            }
+        }
+        .userdashboard-section-container.userdashboard-section-container-tiles{
+             .tiles-and-leftright-navigation-container{
+                .tiles-pagesnavigation{
+                    margin:105px 12px 0px 12px;
+                }
+                .tiles-pages-container{
+                    width:425px;
+                    margin:0px 4px;
+                }
+             }
+        }
+        .userdashboard-section-container-progserv{
+            ul{
+                padding-left:0px;
+                li{
+                    div{
+                        margin-left:33px;
+                    }
+                }
+            }
+        }
+        .userdashboard-section-container-searches{
+            ul{
+                .pastsearches-listitem{
+                    width:160px;
+                    .pastsearches-searchterm{
+                        width:130px;
+                    }
+                }
+            }
+        }
+        .userdashboard-section-container-resevents{
+             #locationsList{
+                width:480px;
+                margin: 20px 10px 20px 0px;
+                h2{
+                    font-size: 13px;
+                    text-transform: uppercase;
+                }
+                .view{
+                    width:150px;
+                }
+             }
+            .userdashboard-section-titlebar{
+                .zipSearch{
+                    input[type=textbox],
+                    input[type=button]{
+                        display:none;
+                    }
+                } 
+            }
+        }
+        .userdashboard-section-container-faq{
+            width:767px;
+            .userdashboard-section-body{
+                width:727px;
+            }
+        }
+    }
+
+
+
+
+    /*************************
+     ***                   ***
+     ***   MOBILE STYLES   ***
+     ***                   ***
+     *************************/
+
+    @media only screen and (max-width: 767px) {
+
+        .progsserv-addtile,
+        .parature-createtickets-container a{
+            display:block;
+            width:auto;
+            line-height: 40px;
+            background-color: #6885a2;
+            color:#fff;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-family: latoblack, sans-serif;
+            padding:0px 10px;
+            margin:0;
+            float:right;
+            border:none;
+            cursor:pointer;
+        }
+
+
+
+
+
+        .progsserv-addtile{
+            margin-top:20px;
+        }
+
+        .userdashboard-section-container-tiles,
+        .userdashboard-section-container-progserv,
+        .userdashboard-section-container-resevents,
+        .userdashboard-section-container-support,
+        .userdashboard-section-container-searches,
+        .userdashboard-section-container-blog{
+            width:100%;
+            margin:20px 0px 0px 0px;
+            float:left;
+            clear:both;
+        }
+        .userdashboard-section-container{
+            padding-bottom:0px;
+            .userdashboard-section-body{
+                width:92%;
+                padding:4%;
+            }
+            .userdashboard-section-body > a{
+                position:static;
+                bottom:20px;
+                right:20px;
+            }
+        }
+        .userdashboard-section-container.userdashboard-section-container-tiles{
+             .tiles-and-leftright-navigation-container{
+                float:left;
+                clear:both;
+                width:100%;
+                margin:0px;
+                padding:0px;
+                .tiles-pages-container{
+                    position:static;
+                    height:auto;
+                    float:left;
+                    clear:both;
+                    width:100%;
+                    margin:0px;
+                    padding:0px;
+                    ul.tiles-pages-page{
+                        position:static;
+                        float:left;
+                        clear:both;
+                        width:100%;
+                        margin:0px;
+                        padding:0px;
+                        li.tiles-tile{
+                            float:left;
+                            clear:both;
+                            width:100%;
+                            margin:0px 0px 3px 0px;
+                            padding:0px;
+                        }
+                    }
+                }
+             }
+        }
+        .userdashboard-section-container-resevents {
+
+            .reqappt-viewall-buttoncontainer{
+                position:static;
+                a{
+                    margin:0px 0px 0px 0px;
+                }
+                input{
+                    float:right;
+                    margin:0px;
+                }
+            }
+
+            #locationsList{
+                padding:0px;
+                margin:0px;
+                width:100%;
+                .view{
+                    float:left;
+                    clear:both;
+                    width:100%;
+                }
+            }
+            .userdashboard-section-titlebar{
+                .zipSearch{
+                    input[type=textbox],
+                    input[type=button],
+                    #mapView{
+                        display:none;
+                    }
+                } 
+            }
+        }
+        .userdashboard-section-container-faq{
+            .userdashboard-section-body{
+                 ul{
+                    li{
+                        float:left;
+                        clear:both;
+                        width:100%;
+                        margin-left:0px;
+                        margin-bottom:40px;
+                    }
+                 }
+            }
+        }
+        .userdashboard-section-container-blog{
+            ul{
+                li{
+                    margin-bottom:40px;
+                    h3{
+                        margin:0px;
+                    }
+                }
+            }
+        }
+        .userdashboard-section-container-progserv{
+             ul{
+                float:left;
+                clear:both;
+                width:100%;
+                margin:0px;
+                padding:0px;
+                li{
+                    float:left;
+                    clear:both;
+                    width:100%;
+                    margin-bottom:40px;
+                }
+             }
+        }
+        .userdashboard-section-container-searches{
+             ul{
+                .pastsearches-listitem{
+                    width:100%;
+                    position: relative;
+                    .pastsearches-searchterm{
+                        margin-right:40px;
+                        width:auto;
+                    }
+                    .pastsearches-newcount{
+                        position:absolute;
+                        top:0px;
+                        right:0px;
+                    }
+                }
+             }
+        }
+
+        .userdashboard-section-container-resevents .userdashboard-section-titlebar,
+        .userdashboard-section-container-blog .userdashboard-section-titlebar,
+        .userdashboard-section-container-faq .userdashboard-section-titlebar{
+            background-color: #6885a2;
+        }
+
+
+    }
+    .userdashboard-section-subbody-notifications{
+        .notifications-closeicon{display:none;}
+        h3{
+            margin-top:0px;
+            padding-top:0px;
+        }
+        h3 span.notifications-notecount{
+                display:block;
+                float:left;
+                font-family: 'latoblack';
+                font-size: 16px;
+                line-height: 14px;
+                text-align: center;
+                color:#205589;
+                background-color: #97e8c1;
+                height:14px;
+                width:14px;
+                padding:7px;
+                -moz-border-radius: 14px;    /* Firefox 3.6-, removed in Firefox 13 */
+                -webkit-border-radius: 14px; /* Safari 4-, Chrome 3- */
+                border-radius: 14px;
+                margin-right:3px;
+        }
+        h3 span.notifications-headingtitle{
+            display:block;
+            padding-top:5px;
+            font-family: 'latoblack', sans-serif;
+        }
+        ul{
+            list-style-type: none;
+            padding:0px;
+            margin:0px;
+            li{
+                margin-bottom:30px;
+            }
+        }
+    }
+
+
+
+}
+
+.region.region-content{
+    width:100% !important;
+}
+

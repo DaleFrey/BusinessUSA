@@ -1,0 +1,189 @@
+/*
+    [--] STORAGE [--]
+    
+    The following styles are stored in export-landing-page-styles-override.css - Coder Bookmark: CB-T2RPEES-BC
+    This file (export-landing-page-styles-override.css) is read by the Export.gov-landing-page template (export-landing-page.tpl.php), and injected within the body
+
+    [!!] IMPLEMENTATION [!!]
+    
+    This style block is placed within the body of this document in this location intentionally.
+    It has been placed here, after the markup of the export.gov content, in order to override any styles or in-line styles that have been imported from the export.gov domain.
+    Any custom styles needed for these pages that directly changes the visualization of content imported rom the export.gov domain shall be written here (export-landing-page-styles-override.css)
+    
+    [--] NOTES TO DEVELOPERS [--]
+    
+    - This file is maintained manually. Please edit/add-to this file for styles that must change the visualization of content importerd from export.gov ONLY
+    - Everything within this file (export-landing-page-styles-override.css) is wrapped fround HTML-style by the template that loads this (export-landing-page.tpl.php)
+    - - This this is NOT the place to write jQuery into
+    - Styles that should effect export.gov-content-landing-pages, but NOT the content imported from the export.gov domain, should be placed in global.css, NOT HERE.
+    - For every style added in this file, please put in a comment referencing what/which page(s) that style should effect
+    
+*/
+
+/* Fix for https://dev.business.usa.reisys.com/export/Opportunities/By-Industry -OR- http://export.gov/industry/index.asp */
+.hide1 {
+    display: none;
+}
+.hide2 {
+    display: none;
+}
+
+/* Fix for http://dev.business.usa.reisys.com/export-portal?usoffices/index.asp */
+#zipcode-input {
+    display: none;
+}
+
+/* Fix for http://dev.business.usa.reisys.com/export-portal?industry/education/index.asp */
+.dyncenterlinks {
+    display: none;
+}
+
+/* Fix for http://dev.business.usa.reisys.com/export/New-EU-REACH-Program-(CS-European-Union)---Country/Business-Service-Providers */
+.exportdotgov-landingpage-mastercontainer-businessserviceproviders .image-1 img {
+    display: none;
+}
+
+/* header font-size change */
+.Header-1 {
+text-align: left;
+margin-left: 0pt;
+margin-top: 4pt;
+margin-bottom: 25px;
+font-size: 22px;
+font-family: Bitter-Bold;
+}
+.SubHeader-1,
+.SubHeader-1-InTable{
+font-size: 15px;
+font-family: Bitter-Bold;
+}
+
+/* Fix for http://dev.business.usa.reisys.com/export/National%20Export%20Initiative/National%20Export%20Initiative */
+.exportdotgov-landingpage-mastercontainer.exportdotgov-landingpage-mastercontainer-neihomepage table:first-of-type {display: none;}
+
+.exportdotgov-landingpage-mastercontainer-neihomepage .exportdotgov-landingpage-returntotopics {margin-bottom: 20px;width: 100%;}
+.exportdotgov-landingpage-mastercontainer-neihomepage .exportdotgov-landingpage-returntotopics a{float: right;}
+
+.exportdotgov-landingpage-mastercontainer-neihomepage .centerallcontent h2:last-of-type,
+.exportdotgov-landingpage-mastercontainer-neihomepage .centerallcontent div:last-of-type{display: none;}
+
+.exportgov-paragraph{display: none;}
+
+/*Fix for http://dev.business.usa.reisys.com/export-portal?ecr --Return to topics */
+
+.exportdotgov-landingpage-mastercontainer.exportdotgov-landingpage-mastercontainer-presidentsexportcontrolreforminitiative .exportdotgov-landingpage-returntotopics,
+.exportdotgov-landingpage-mastercontainer-welcometopanamahome .exportdotgov-landingpage-returntotopics
+{
+margin-bottom: 20px;
+font-family: bitter-bold;
+width: 100%;
+float: right;
+}
+
+
+.exportdotgov-landingpage-mastercontainer.exportdotgov-landingpage-mastercontainer-presidentsexportcontrolreforminitiative .exportdotgov-landingpage-returntotopics a,
+.exportdotgov-landingpage-mastercontainer-welcometopanamahome .exportdotgov-landingpage-returntotopics a
+{
+float: right;
+}
+
+/* Fix for http://dev.business.usa.reisys.com/export/International-Logistics/Mandatory-Screening-of-Cargo-on-Passenger-Flights */
+.exportdotgov-landingpage-mastercontainer-mandatoryscreeningofcargoonpassengerflights table:first-of-type {
+display: none;
+}
+
+.exportdotgov-landingpage-mastercontainer-renewableenergyandenergyefficiencyexportinitiative table td{padding: 4px 8px; vertical-align: top;}
+
+/* Fix for fonts -- over riding inline styles */
+.exportdotgov-landingpage-mastercontainer-renewableenergyandenergyefficiencyexportinitiative ul li span,
+.exportdotgov-landingpage-mastercontainer-exportinformationbyindustry  ul li span{
+font-family: inherit !important;
+font-size: inherit !important;
+color: inherit !important;
+}
+.centerallcontent div ul li span{
+font-family: inherit !important;
+font-size: inherit !important;
+color: inherit !important;
+}
+
+/* Fix for http://business.usa.gov/export/Trade-Americas/Trade-Americas-Best-Prospects theming */
+
+.exportdotgov-landingpage-mastercontainer-tradeamericasbestprospects table tr td {width: 25%; vertical-align: top;}
+.exportdotgov-landingpage-mastercontainer-tradeamericasbestprospects .DefaultParagraph-1 {float: left;}{float: left;}
+
+/* Fix for http://origin-business.usa.gov/export/National-Export-Initiative/National-Export-Initiative theming */
+.mapmessage tbody {
+    border-top: none;
+}
+.mapmessage table a {
+    white-space: nowrap;
+}
+
+/* styles for the map on the National Export Inititive */
+   .neimastercontainer>h1+div { 
+        left: -45px !important;
+        z-index: 1;
+    }
+    .export-portal-menu{
+        z-index: 99;
+    }
+
+    .states-list-desktop,
+    .states-list-tablet,
+    .states-list-mobile,
+    .mapmessage,
+    #lipsum{
+        float:left;
+        clear:both;
+        width:100%;
+    }
+    .mapmessage{
+        width:90%;
+        padding:5% !important;
+    }
+    .stateslist{
+        float:left;
+        padding:0px;
+    }
+    .stateslist li{
+        margin-bottom:5px;
+    }
+
+
+    .states-list-desktop .stateslist{width:25%;}
+    .states-list-tablet .stateslist{width:33%;}
+    .states-list-mobile .stateslist{width:100%;}
+
+/* desktop */
+@media only screen and (min-width:1025px){
+    .states-list-tablet,
+    .states-list-mobile{
+        display:none;
+    }
+}
+
+/* tablet */
+@media only screen and (min-width:768px) and (max-width:1024px){
+    .states-list-desktop,
+    .states-list-mobile,
+    .neimastercontainer>h1+div{
+        display:none !important;
+    }
+
+}
+
+/* mobile */
+@media only screen and (max-width: 767px) {
+    .states-list-tablet,
+    .states-list-desktop,
+    .neimastercontainer>h1+div{
+        display:none !important;
+    }
+}
+
+
+
+
+
+

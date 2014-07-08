@@ -1,0 +1,5 @@
+name = Exporter Dashboard
+description = Contains theme-declarations, templates, end small ExcelSpreadhseet-based engine for creating theExporter dashboard.
+package = REI
+core = 7.x
+files[] = exporter_dashboard.module

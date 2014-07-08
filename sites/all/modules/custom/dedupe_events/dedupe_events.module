@@ -1,0 +1,34 @@
+<?php
+
+function dedupe_events_cron() {
+    dedupe("event");
+}
+function dedupe($type) {
+    //we get clean dups with eventdates after today, gets the closest date
+    $query = "SELECT n.nid, n.title,d.field_event_date_value
+        FROM {node} n INNER JOIN {field_data_field_event_date} d  ON n.nid = d.entity_id
+        WHERE d.field_event_date_value > now()
+        AND n.type = :type
+        GROUP BY n.title HAVING count(*) > 1
+        ORDER BY d.field_event_date_value asc";
+
+    $result = db_query($query, array(':type' => $type));
+    foreach ($result as $row) {
+        $dup_rows = db_query("select nid from node where title = :title and nid <> :nid", array(':title' => $row->title, ':nid' => $row->nid) );
+        foreach ($dup_rows as $row_dups) {
+            node_delete($row_dups->nid);
+        }
+    }
+    unset($result);
+    //clean out the rest, ones from above shouldn't be picked up here anymore
+    $result = db_query("SELECT nid, title FROM {node}
+                      WHERE type = :type
+                      GROUP BY title HAVING count(*) > 1
+                      ORDER BY title DESC", array(':type' => $type));
+    foreach ($result as $row) {
+        $dup_rows = db_query("select nid from node where title = :title and nid <> :nid", array(':title' => $row->title, ':nid' => $row->nid) );
+        foreach ($dup_rows as $row_dups) {
+            node_delete($row_dups->nid);
+        }
+    }
+}

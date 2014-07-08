@@ -1,0 +1,898 @@
+/* Depending on which radio-button is selected under the "Size" slide, determine 
+which text shall be shown for the last radio-button on under the "Insurance" slide */
+.wizard.selected-tag-Self_Employed .never-Self_Employed,
+.wizard.selected-tag-Employee_less_25 .never-Employee_less_25,
+.wizard.selected-tag-Employee_less_50 .never-Employee_less_50 {
+    display: none;
+}
+.healthcare-50ormore-only {
+    display: none;
+}
+.selected-tag-Employee_more_50 .healthcare-50ormore-only {
+    display: block;
+}
+
+body.page-contains-wizard .slide .questions .dk_container {
+    display: block;
+    float: left;
+}
+
+body.page-contains-wizard .slide .questions .dk_container{
+        width: 88%;
+}
+
+body.page-contains-wizard .wrapper .region-content .block-system .wrapper form .slide a.dk_toggle.dk_label{
+    width: 79% !important;
+}
+
+/**************************
+***   SPLASH PAGE   ****
+**************************/
+body.page-healthcare{
+
+    .wizard.wizard-container.wizard-uniqueid-healthcare{
+        width: 72%;
+        float: left;
+    }
+
+    .slide{
+        .questions .widget-type-radio-group .question-controle-container .prettyradio{
+            float: none;
+            vertical-align: top;
+        }
+    }
+
+    //Splash page
+    .slide.slide-id-0{
+        width: 100%;
+        float: left;
+        .questions{
+            margin-left: 0px;
+            margin-top: 30px;
+            float: left;
+            padding: 0;
+            width: 100%; 
+            //Wizard icon
+            .question-container.widget-type-image.wiztag-splashimage.splash-icon-image{
+                position: inherit;
+                left: 0;
+                padding: 0;
+                margin-left: 23%;
+                margin-right: 15px;
+                text-align: left;
+                width: 45px;
+                float: left;
+                .question-controle-container.question-controle-for-wiztag-splashimage.question-controle-widget-type-image{
+                    #wiztag-splashimage{
+                        position: inherit;
+                        left: 0;
+                        height: 45px;
+                    }
+                }
+            }
+
+            //Wizard Name
+            .question-container.widget-type-label.wiztag-splash-title-label.splash-title{
+                margin: 0;
+                padding: 0;
+                //width: inherit;
+                text-align: left;
+                label.question-label.question-label-for-wiztag-splash-title-label{
+                    font-weight: normal;
+                    letter-spacing: -1px;
+                    font-size: 33px;
+                    margin-top: 2px;
+                    color:#f2f2f2;
+                }
+            }
+
+            //Welcome Message
+            .question-container.widget-type-label.wiztag-splash-welcome-message.splash-welcome{
+                margin-top: 30px;
+                padding: 0 7%;
+                width: 86%;
+                label.question-label.question-label-for-wiztag-splash-welcome-message{
+                    color:#f2f2f2;
+                    font-weight: normal;
+                    letter-spacing: -1px;
+                }
+            }
+
+            //Get Started Button
+            .question-container.widget-type-nextbutton.wiztag-splash-next-button.splash-button{
+                .question-controle-container.question-controle-for-wiztag-splash-next-button.question-controle-widget-type-nextbutton{
+                    input#wiztag-splash-next-button{
+                        font-size: 12px;
+                        letter-spacing: -.5px;
+                        padding: 20px 45px;
+                    }
+                }
+            }
+
+            //Splash extention
+            .question-container.widget-type-html.wiztag-custom-html{
+                float: left;
+                width: 100%;
+                .question-controle-container.question-controle-for-wiztag-custom-html.question-controle-widget-type-html{
+                    float: left;
+                    width: 100%;
+                    .splashextension {
+                        float: left;
+                        background-color: #6885a2;
+                        border-top: 2px dashed #8298ae;
+                        width: 92%;
+                        padding: 4% 4% 2% 4%;
+                        display: block;
+                        text-align: left;
+                        .splashextension-section {
+                            float: left;
+                            width: 100%;
+                            margin-bottom: 30px;
+                            &.splashextension-featinfo{
+                                ul{
+                                    li{
+                                        a{
+                                            float: none;
+                                        }
+                                    }
+                                }
+                            }
+                            &.splashextension-toolsres,
+                            &.splashextension-connect{
+                                width: 48%;
+                                h2{
+                                    padding-left: 5%;
+                                }
+                                div{
+                                    padding-left: 5%;
+                                    padding-right: 5%;
+                                    width: 90%;
+                                    min-height: 220px;
+                                }
+                                div.splashextension-connect-socialicons {
+                                    width: 100%;
+                                    min-height: 36px;
+                                    text-align: center;
+                                    padding: initial;
+                                    padding-top: 0;
+                                    //border:1px solid #ff4400;
+                                    background-color: transparent;
+                                    a{
+                                        //border:1px solid #ff4400;
+                                        float: left;
+                                        display: block;
+                                        width: 36px;
+                                        height: 36px;
+                                        margin-left: 20px;
+                                    }
+                                    img {
+                                        padding: 0px;
+                                        padding-top: 0px;
+                                        //border:1px solid #ff4400;
+                                    }
+                                }
+                                ul{
+                                    padding: 0;
+                                    li{
+                                        list-style: none;
+                                        div{
+                                            padding: 0px;
+                                            margin: 0px;
+                                            width: 80%;
+                                            min-height: 0px;
+                                            float: none;
+                                            &.splashextension-connect-li-text-questionshop{
+                                                float: left;
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+                            &.splashextension-connect{
+                                float: right;
+                            }
+                            h2{
+                                background-color: #ffffff;
+                                text-transform: uppercase;
+                                font-family: "latoblack", sans-serif;
+                                font-size: 14px;
+                                color: #515151;
+                                font-weight: normal;
+                                margin: 0;
+                                padding: 18px 0;
+                                padding-left: 3%;
+                                letter-spacing: -.5px;
+                            }
+                            div{
+                                float: left;
+                                width: 94%;
+                                padding: 20px 3%;
+                                background-color: #839bb3;
+                                &.splashextension-featinfo-body .viewless {
+                                    display: none;
+                                }
+                                &.splashextension-featinfo-body.viewing-more {
+                                    .viewmore {
+                                        display: none;
+                                    }
+                                    .viewless {
+                                        display: inline;
+                                    }
+                                }
+                                a.view{
+                                    background-color: #eff2f5;
+                                    color: #6885a2;
+                                    text-transform: uppercase;
+                                    font-size: 12px;
+                                    padding: 15px;
+                                    float: right;
+                                    display: block;
+                                    clear: both;
+                                    span{
+                                        padding-right: 17px;
+                                    }
+                                    .viewmore{
+                                        background: transparent url('/sites/all/themes/bizusa/images/icons/viewall.png') no-repeat 100% -1px;
+                                    }
+                                    .viewless{
+                                        background: transparent url('/sites/all/themes/bizusa/images/icons/viewless.png') no-repeat 100% -1px;
+                                    }
+                                }
+                                ul{
+                                    margin: 0;
+                                    padding: 0;
+                                    padding-left: 15px;
+                                    float: left;
+                                    li{
+                                        color: #fff;
+                                        padding-bottom: 10px;
+                                        float: left;
+                                        width: 100%;
+                                        &.splashextension-featinfo-li{
+                                            float: left;
+                                            width: 43%;
+                                            margin-right: 7%;
+                                            min-height: 40px;
+                                        }
+                                        a{
+                                            color: #fff;
+                                            font-weight: normal;
+                                            font-family: "latoregular",sans-serif;
+                                            font-size: 14px;
+                                            letter-spacing: -.5px;
+                                            float: left;
+                                            width: 100%;
+                                            img{
+                                                float: left;
+                                                margin-right: 10px
+                                            }
+                                            span{
+                                                display: block;
+                                                margin-top: 3px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/**************************
+***   RESULTS PAGE   ****
+**************************/
+body.page-healthcare.wizard-current-slide-is-4{
+    .slide{
+        background-color: transparent;
+        .ajax-container{
+            float: left;
+            .wizard-results-wrapper.has-sidebar-true{
+                float: left;
+                .wizard-result-sections-container{
+                    margin: 10px 0px;
+                    width: 72%;
+                    background-color: #fff;
+                    .note-healthcare-container{
+                        #note-healthcare{
+                            font-size: 12px;
+                            line-height: 16px;
+                        }
+                    }
+                }
+                .wizard-result-section{
+                    .yawizard-pagedresults-mastercontainer{
+                        .yawizard-pagedresults-page{
+                            .yawizard-pagedresults-results-container{
+                                .yawizard-pagedresults-result{
+                                    .wizard-result-section-result{
+                                        .wizard-result-titlesnippettags{
+                                            .wizard-result-title{
+                                                a{
+                                                    font-family: "latoblack",sans-serif;
+                                                    font-size: 15px;
+                                                    letter-spacing: -.5px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .wizard-sidebars-container{
+                    //border: 1px dashed;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/**************************
+***   SIDEBAR  ****
+**************************/
+
+//SHARE WIDGET
+body.page-contains-wizard{
+    .wrapper{
+        .region-content{
+            .block-system{
+                .wrapper{
+                    form{
+                        .slide.slide-id-4{
+                            #shareWidget{
+                                 a.sharewidget-toggler{
+                                    color: #6885A2;
+                                    font-family: "latoblack", sans-serif;
+                                    letter-spacing: -.5px;
+                                    &:hover{
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+body.wizard-current-slide-is-0 {
+    .wizard-outside-sidebars-container { 
+        .wizard-outside-sidebar-connectwithus,
+        .wizard-outside-sidebar-featinfo {
+            display: none;
+        }
+    }
+}
+
+body.page-healthcare{
+    .wrapper.wizard-has-outside-sidebar-true{
+        float: left;
+        .wizard-outside-sidebars-container,
+        .wizard-sidebars-container{ //sidebar in results page
+            margin-top: 0;
+            padding: 0%;
+            background-color: inherit;
+            float: right;
+            width:27%;
+            .share-export-email-container{
+                background-color: #fff;
+                width: 100% !important;
+                float: left;
+                margin: 10px 0px 30px 0px;
+                .exportexcelWidget{
+                    float: left;
+                    width: 30px;
+                    height: 23px;
+                    padding: 16px 10px;
+                    position: relative;
+                    z-index: 9;
+                    a.exportexcelWidget-toggler{
+                        width: 30px;
+                        height: 30px;
+                        display: block;
+                        background: transparent url('/sites/all/themes/bizusa/images/icons/excel-circle.png') no-repeat top left;
+                        background-size: 26px auto;
+                        margin-top: 4px;
+                        float: left;
+                    }
+                    #exportexcelWidget-popup{
+                        position: absolute;
+                        top: 60px;
+                        right: 0px;
+                        display: block;
+                        height: 66px;
+                        width: 225px;
+                        padding-top: 15px;
+                        background: transparent url(/sites/all/themes/bizusa/images/shareTipTop.png) no-repeat 188px 6px;
+                        .exportexcelWidget-popup-body{
+                            background-color: #ffffff;
+                            width: 220px;
+                            float: left;
+                            box-shadow: 0px 0px 10px 1px #F1F1F1;
+                            a.exportexcel-group{
+                                display: block;
+                                height: 27px;
+                                float: left;
+                                padding: 20px 3% 10px 3%;
+                                width: 94%;
+                                text-indent: 50px;
+                                &.exportexcel-download{
+                                    background: url("/sites/all/themes/bizusa/images/share-btn/download.png") no-repeat scroll 10px 10px;
+                                    border-bottom: 1px solid #E9E9E9;
+                                }
+                                &.exportexcel-email{
+                                   background: url("/sites/all/themes/bizusa/images/share-btn/mail.png") no-repeat scroll 10px 10px;
+                                }
+                                &:hover{
+                                    background-color: #6885A2;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+                a{
+                    font-family: "latoblack",sans-serif;
+                }
+                a:hover{
+                    text-decoration: none;
+                }
+            }
+            .wizard-outside-sidebar,
+            .wizard-sidebar{ //sidebar in results page
+                margin-bottom: 30px;
+                float: left;
+                width: 100%;
+                h2 {
+                    cursor: pointer;
+                    margin: 0;
+                    padding: 0;
+                    font-family: "latoblack", sans-serif;
+                    font-weight: normal;
+                    font-size: 12px;
+                    color: #515151;
+                    background-color: #e2e2e2;
+                    text-transform: uppercase;
+                    height: 50px;
+                    letter-spacing: -.5px;
+                    padding-left: 5%;
+                    line-height: 50px;
+                    img{
+                        float: right;
+                        margin-top: 8px;
+                        margin-right: 8px;
+                    }
+                    &.sidebar-connectwithus-title{
+                        background: #e2e2e2 url('/sites/all/themes/bizusa/images/logos/healthcare_blueslash.png') no-repeat 110px 9px;
+                    }
+                }
+                div{
+                    background-color: #fff;
+                    padding: 20px 3% 20px 6%;
+                    width: 91%;
+                    float: left;
+                    text-align: center;
+                    ul{
+                        text-align: left;
+                        padding: 0;
+                        margin: 0;
+                        float: left;
+                        li{
+                            list-style: none;
+                            padding-bottom: 15px;
+                            float: left;
+                            width: 100%;
+                            &.sidebar-connectwithus-li.sidebar-connectwithus-li-question{
+                                //border: 1px solid;
+                                color: #6885A2;
+                                font-family: "latoblack",sans-serif;
+                                font-size: 13px;
+                                a{
+                                    //border:1px solid #ff4400;
+                                    background-color: inherit;
+                                    width: initial;
+                                    padding: 0;
+                                    margin: 0;
+                                    float: none;
+                                    display: inline;
+                                }
+                            }
+                            a{
+                                font-size: 13px;
+                                letter-spacing: -.5px;
+                                font-family: "latoblack", sans-serif;
+                                font-weight: normal;
+                                line-height: 18px;
+                                float: left;
+                                width: 100%;
+                                img{
+                                    float: left;
+                                    margin-right: 10px;
+                                }
+                                span{
+                                    margin-top: 3px;
+                                    word-break: break-word;
+                                    span{
+                                        float: none;
+                                        color: #000;
+                                        font-family: "latoregular", sans-serif;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    a.viewmoreless{
+                        background-color: #eff2f5;
+                        color: #6885a2;
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        padding: 15px;
+                        display: inline-block;
+                        font-family: "latoblack",sans-serif;
+                        span{
+                            padding-right: 17px;
+                        }
+                        .more{
+                            background: transparent url('/sites/all/themes/bizusa/images/icons/viewall.png') no-repeat 100% -1px;
+                        }
+                        .less{
+                            background: transparent url('/sites/all/themes/bizusa/images/icons/viewless.png') no-repeat 100% -1px;
+                        }
+                    }
+                    div{
+                        padding: 0;
+                        width: 100%;
+                        &.sidebar-connectwithus-li-text-questionshop{
+                            float: left;
+                            width: 175px;
+                            div{
+                                text-align: left;
+                            }
+                        }
+                        div{
+                            width: 100%;
+                            a{
+                                background-color: #eff2f5;
+                                color: #6885a2;
+                                text-transform: uppercase;
+                                font-size: 12px;
+                                padding: 15px;
+                                display: inline-block;
+                                font-family: latoblack;
+                            }
+                        }
+                    }
+                }
+
+            }
+            
+        }
+    }
+}
+
+.wizard-outside-sidebars-container,
+.wizard-sidebars-container{ //sidebar in results page 
+    .collapsed .uparrow {
+            display: none;
+    }
+    .expanded .downarrow {
+            display: none;
+    }
+    .sidebar-body.collapsed .viewmoreless .less {
+            display: none;
+        }
+    
+    .sidebar-body.expanded .viewmoreless .more {
+        display: none;
+    }
+}
+
+/* SPECIAL STYLES FOR THIS WIZARDS RESULTS AREA */
+
+body.page-healthcare.wizard-current-slide-is-4.wizard-ajax-complete {
+    .wizard.wizard-container.wizard-uniqueid-healthcare {
+        width: 100%;
+        float: none;
+    }
+    .wizard-outside-sidebars-container {
+        display: none;
+    }
+}
+.wizard-results-wrapper {
+    .wizard-sidebars-container {
+        h2 {
+            cursor: pointer;
+        }
+        h2.collapsed .uparrow {
+            display: none;
+        }
+        h2.expanded .downarrow {
+            display: none;
+        }
+    }
+}
+
+
+/**************************
+ ***                   ****
+ ***   TABLET STYLES   ****
+ ***                   ****
+ **************************/
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+
+    body.page-contains-wizard .wizardHeader h1 {
+        font-size: 23px;
+        margin-right: 10px;
+    }
+
+    //Splash page
+    body.page-healthcare{
+        .slide{
+            .questions{
+                .widget-type-radio-group{
+                    .question-controle-container{
+                        label{
+                            font: 15px/24px 'latoregular',sans-serif;
+                            width: 160px;
+                        }
+                    }
+                }
+            }
+        }
+        .slide.slide-id-0{
+            .questions{
+
+                //Wizard icon
+                .question-container.widget-type-image.wiztag-splashimage.splash-icon-image{
+                    margin-left: 17%; 
+                    .question-controle-container.question-controle-for-wiztag-splashimage.question-controle-widget-type-image{
+                        #wiztag-splashimage{
+                        }
+                    }
+                }
+
+                //Welcome Message
+                .question-container.widget-type-label.wiztag-splash-welcome-message.splash-welcome{
+                    label.question-label.question-label-for-wiztag-splash-welcome-message{
+                        font-size: 18px; 
+                    }
+                }
+
+            }
+        }
+    }
+
+    //Sidebar
+    body.page-healthcare{
+        .wrapper.wizard-has-outside-sidebar-true{
+            .wizard-outside-sidebars-container,
+            .wizard-sidebars-container{ //sidebar in results page
+                .wizard-outside-sidebar,
+                .wizard-sidebar{ //sidebar in results page
+                    h2 {
+                        font-size: 11px;
+                        &.sidebar-connectwithus-title{
+                            background: #e2e2e2 url('/sites/all/themes/bizusa/images/logos/healthcare_blueslash.png') no-repeat 102px 15px;
+                            background-size: 89px auto;
+                        }
+                    }
+                    div.sidebar-connectwithus-li-text-questionshop{
+                        width: 150px !important;
+                    }
+                    div{
+                        ul{
+                            li{
+                                a{
+                                    font-size: 12px;
+                                    span{
+                                        span{
+                                            display: block;
+                                            margin-top: 0px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*************************
+ ***                   ***
+ ***   MOBILE STYLES   ***
+ ***                   ***
+ *************************/
+
+@media only screen and (max-width: 767px) {
+
+    body.page-healthcare .slide .questions .widget-type-radio-group .question-controle-container label {
+      display: inline-block;
+      font: 18px/25px 'latoregular',sans-serif;
+      margin-top: 3px;
+      margin-bottom: 10px;
+      margin-left: 0px;
+      width: 80%;
+    }
+    
+    //Splash page
+    body.page-healthcare{
+        .wizard.wizard-container.wizard-uniqueid-healthcare{
+            width: 100%;
+        }
+        .slide.slide-id-0{
+            width: 100%;
+            .questions{
+                margin-top: 0;
+
+                //Wizard icon
+                .question-container.widget-type-image.wiztag-splashimage.splash-icon-image{
+                    margin-left: 0%;
+                    margin-right: 0;
+                    width: 100%;
+                    float: left;
+                    text-align: center;
+                    .question-controle-container.question-controle-for-wiztag-splashimage.question-controle-widget-type-image{
+                        #wiztag-splashimage{
+                            height: 40px;
+                        }
+                    }
+                }
+
+                //Wizard Name
+                .question-container.widget-type-label.wiztag-splash-title-label.splash-title{
+                    margin: 0;
+                    padding: 0;
+                    width: 100% !important;
+                    text-align: center;
+                    label.question-label.question-label-for-wiztag-splash-title-label{
+                        width: 100%;
+                        max-width: 100%;
+                        margin-top: 3px;
+                        font-size: 24px;
+                        margin-top: 4px;
+                        letter-spacing: -.5px; 
+                        text-align: center;
+                    }
+                }
+
+                //Welcome Message
+                .question-container.widget-type-label.wiztag-splash-welcome-message.splash-welcome{
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                    label.question-label.question-label-for-wiztag-splash-welcome-message{
+                        font-size: 80%;
+                        letter-spacing: -.5px;
+                        margin-top: 10px;
+                    }
+                }
+
+                //Splash extention
+                .question-container.widget-type-html.wiztag-custom-html{
+                    .question-controle-container.question-controle-for-wiztag-custom-html.question-controle-widget-type-html{
+                        .splashextension {
+                            .splashextension-section {
+                                &.splashextension-toolsres,
+                                &.splashextension-connect{
+                                    width: 100%;
+                                    h2{
+                                        padding-left: 3%;
+                                    }
+                                    div{
+                                        padding-left: 3%;
+                                        padding-right: 3%;
+                                        width: 94%;
+                                        min-height: inherit;
+                                    }
+                                }
+                                &.splashextension-connect{
+                                    float: left;
+                                }
+                                div{
+                                    ul{
+                                        li{
+                                            &.splashextension-featinfo-li{
+                                                width: 100%;
+                                                min-height: inherit;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //Sidebar
+    body.page-healthcare{
+        .wrapper.wizard-has-outside-sidebar-true{
+            .wizard-outside-sidebars-container,
+            .wizard-sidebars-container{ //sidebar in results page
+                margin-top: 30px;
+                width: 100%;
+                .share-export-email-container{
+                    display: none;
+                }
+                .wizard-outside-sidebar,
+                .wizard-sidebar{ //sidebar in results page
+                    h2 {
+                        padding-left: 10px;
+                        &.sidebar-connectwithus-title{
+                            background: #e2e2e2 url('/sites/all/themes/bizusa/images/logos/healthcare_blueslash.png') no-repeat 120px 15px;
+                            background-size: 125px auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //Results Page
+    body.page-healthcare.wizard-current-slide-is-4{
+        .slide{
+            .ajax-container{
+                .wizard-results-wrapper.has-sidebar-true{
+                    .wizard-result-sections-container{
+                        margin-top: 0;
+                        width: 100%;
+                        .note-healthcare-container{
+                            #note-healthcare{
+                                margin: 0;
+                                font-size: 14px;
+                                line-height: 19px;
+                            }
+                        }
+                        .wizard-result-section{
+                            border-bottom: 30px solid #EFF2F5;
+                            .wizard-result-section-icon-container{
+                                .wizard-result-section-icontitle{
+                                    font-family: "latoblack_italic",sans-serif;
+                                    font-size: 10px;
+                                    line-height: 12px;
+                                }
+                            }
+                            h3.wizard-result-section-title{
+                                text-transform: inherit;
+                                line-height: 26px;
+                                width: 68%;
+                            }
+                            .yawizard-pagedresults-mastercontainer{
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                    .wizard-sidebars-container{
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+
+
+
+
+
+

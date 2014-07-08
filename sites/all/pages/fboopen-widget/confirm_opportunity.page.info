@@ -1,0 +1,4 @@
+title = Confirm Oportunity
+index in solr = false
+inject dev note = true
+render mode = solo

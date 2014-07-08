@@ -1,0 +1,136 @@
+    .region.region-content{
+        width:100%;
+    }
+
+    h1.welcome-header{
+        font-family: 'latoregular', sans-serif;
+        font-size: 22px;
+        margin:0px;
+        span{
+            font-family:'latoblack_italic', sans-serif;
+        }
+    }  
+
+    .userdashboard-section-container {
+        margin: 20px 0px;
+        background-color:#fff;
+        float:left;
+        width:100%;
+        .userdashboard-section-titlebar {
+            background-color: #6885a2;
+            color: white;
+            float:left;
+            clear:both;
+            width:100%;
+            position:relative;
+            .userdashboard-section-titlebar-title {
+                float: left;
+                padding:0px 20px;
+            }
+        }
+        .userdashboard-section-body{
+            float:left;
+            clear:both;
+            width:920px;
+            padding:20px;
+            ul{
+                list-style-type: none;
+                padding:0px;
+                margin:0px;
+                li{
+                    margin-bottom:30px;
+                }
+            }
+        }
+    }
+    .pager{
+        margin-top: 30px;
+        float:left;
+        a{
+            font-size: 15px;
+        }
+        li{
+            float: left;
+        }
+        .pager-first{
+            display: none !important;
+        }
+        .pager-current{
+            font-family: 'latoregular',sans-serif;
+            color: #A8A8A8;
+            font-size: 15px;
+        }
+        .pager-next a{
+            display: block;
+            width: 21px;
+            height: 21px;
+            text-indent: -9999999px;
+            background: url("/sites/all/themes/bizusa/images/pager-next.png") no-repeat transparent;
+        }
+        .pager-previous a{
+            display: block;
+            width: 21px;
+            height: 21px;
+            background: url("/sites/all/themes/bizusa/images/pager-previous.png") no-repeat transparent;
+            text-indent: -9999999px;
+        }
+        .pager-ellipsis{
+            font-size: 25px;
+            line-height: 0px;
+            margin: 0px;
+        }
+        .pager-last.last{
+            display:none !important;
+        }
+    }
+    .pastsearches-newcount {
+      display: block;
+      float: right;
+      font-family: 'latoblack';
+      font-size: 12px;
+      text-align: center;
+      color: #205589;
+      background-color: #97e8c1;
+      height: 12px;
+      width: 12px;
+      padding: 6px;
+      /* Firefox 3.6-, removed in Firefox 13 */
+      -moz-border-radius: 12px;
+      /* Safari 4-, Chrome 3- */
+      -webkit-border-radius: 12px;
+      border-radius: 12px;
+    }
+
+    /**************************
+     ***                   ****
+     ***   TABLET STYLES   ****
+     ***                   ****
+     **************************/
+
+    @media only screen and (min-width:768px) and (max-width:1024px){
+        .userdashboard-section-container {
+            .userdashboard-section-body{
+                width:727px;
+            }
+        }
+    }
+
+
+
+    /*************************
+     ***                   ***
+     ***   MOBILE STYLES   ***
+     ***                   ***
+     *************************/
+
+    @media only screen and (max-width: 767px) {
+        .userdashboard-section-container {
+            .userdashboard-section-body{
+                width:92%;
+                padding:4%;
+            }
+        }
+        .expandcollapse-container{
+            img{display:none;}
+        }
+    }

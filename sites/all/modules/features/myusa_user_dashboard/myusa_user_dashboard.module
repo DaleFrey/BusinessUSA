@@ -1,0 +1,114 @@
+<?php
+/**
+ * @file
+ * Drupal needs this blank file.
+ */
+/**
+ * Implements HOOK_theme()
+ */
+function myusa_user_dashboard_theme() {
+    $themes = array();
+    $themes['myusa_user_dashboard'] = array(
+        'template' => 'myusa_user_dashboard',
+        'variables' => array(),
+    );
+    $themes['myusa_user_dashboard_get_started'] = array(
+        'template' => 'myusa_user_dashboard_get_started',
+        'variables' => array(),
+    );
+    return $themes;
+}
+/**
+ * Implements HOOK_menu()
+ */
+function myusa_user_dashboard_menu() {
+    $items['myusa'] = array(
+        'title' => 'MyUSA Dashboard',
+        'page callback' => 'myusa_user_dashboard_view',
+        'access callback' => true,
+        //'access arguments' => array(true),
+    );
+    $items['myusa/get_started'] = array(
+        'title' => 'MyUSA Dashboard',
+        'page callback' => 'myusa_user_dashboard_getstarted_view',
+        'access callback' => true,
+        //'access arguments' => array(true),
+    );
+    return $items;
+}
+//this would be the homepage view for myusa
+function myusa_user_dashboard_view(){
+    global $user;
+    $user->uid ;
+    $user_info = user_load( $user->uid);
+    //better conditions to redirect needed
+    if(!$user_info->field_usr_industries['und'][0]['Value'] && !$user_info->field_usr_ownership['und'][0]['Value']){
+        //drupal_goto("myusa/get_started");
+    }
+    return theme(
+        'myusa_user_dashboard',
+        array(
+        )
+    );
+}
+//questionaire
+function myusa_user_dashboard_getstarted_view(){
+    return theme(
+        'myusa_user_dashboard_get_started',
+        array(
+        )
+    );
+}
+
+function myusa_user_dashboard_ownership_options(){
+    //db call here eventually
+    $out = array("US Citizen-Owned","Minority Owned","Veteran-Owned","Disabled Veteran Owned","Women Owned","For Profit Business","Socially and Economically Disadvantaged");
+    return drupal_map_assoc($out);
+}
+function myusa_user_dashboard_industry_options(){
+    //db call here eventually
+    $out = array("Accomodation and Food Services","Management and Remediation Services","Construction","Administrative and Support and Waste","Agriculture, Forestry, Fishing","Educational Services","Management and Remediation Services","Arts, Entertainment, Recreation");
+    return drupal_map_assoc($out);
+}
+function myusa_user_dashboard_wizard_options(){
+    //some kind of other call here eventually
+    $out = array(
+        "Begin Exporting",
+        "Access Financing",
+        "Finding Opportunities",
+        "Resources for Veterans",
+        "Start a Business",
+        "Seek Disaster Assistance"
+    );
+    return drupal_map_assoc($out);
+}
+
+//questionaire form
+function myusa_user_dashboard_ownership_industry_form($form, &$form_state){
+    $form['questionaire_ownership'] = array(//
+        '#type' => 'checkboxes',
+        '#prefix' => '<div class="userdashboard-questionare-options">',
+        '#options' => myusa_user_dashboard_ownership_options(),
+        '#suffix' => '</div>',
+    );
+    $form['questionaire_industry'] = array(//
+        '#type' => 'checkboxes',
+        '#prefix' => '<div class="userdashboard-questionare-options">',
+        '#options' => myusa_user_dashboard_industry_options(),
+        '#suffix' => '</div>',
+    );
+    $form['questionare_submit'] = array(
+        '#type' => 'submit',
+        '#value'=> 'Apply',
+    );
+    return $form;
+}
+function myusa_user_dashboard_wizards_form($form, &$form_state){
+    $form['questionaire_tiles'] = array(//
+        '#type' => 'checkboxes',
+        '#prefix' => '<div class="userdashboard-questionare-tiles">',
+        '#options' => myusa_user_dashboard_wizard_options(),
+        '#suffix' => '</div>',
+    );
+    return $form;
+}

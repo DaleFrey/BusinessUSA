@@ -1,0 +1,3961 @@
+/*************************
+ ***                   ***
+ ***   MOBILE STYLES   ***
+ ***                   ***
+ *************************/
+
+@media only screen and (max-width: 767px) {
+
+.messages{
+	width: auto;
+}
+.title {
+    float: left;
+    padding: 10px;
+    min-height: 30px;
+}
+
+	/**************************
+	***   GENERAL STYLES   ****
+	**************************/
+	body{
+		padding:0px;
+
+		.wizard{
+			.prettycheckbox{
+				a{
+					margin-top:10px;
+					height:22px;
+					width:22px;
+					background: transparent url('../images/wiz-checkboxes.png') no-repeat 0px 0px;
+				}
+				a.checked{
+					margin-top:10px;
+					height:22px;
+					width:22px;
+					background: transparent url('../images/wiz-checkboxes.png') no-repeat 0px -22px;
+				}
+			}
+		}
+
+
+	}
+    .mobile-never {
+        display: none;
+    }
+    .mobile-never-important {
+        display: none !important;
+    }
+    .mobile-forceshow {
+        display: block;
+    }
+    .mobile-forceshow-important {
+        display: block !important;
+    }
+	.wrapper{
+		width:90%;
+        .sitewide-logo-and-search{
+            width:100%;
+            #sitewide-search-input{
+              width:70%;
+              padding: 0 5%;
+              -webkit-appearance: none;
+              border-radius: 0;
+              -webkit-border-radius:0;
+            }
+          #sitewide-search-button{
+              width:20%;
+              padding: 19px 5%;
+              height: auto;
+          }
+
+        }
+        #titleWrapper{
+			height:auto;
+			h1{
+				line-height: inherit;
+			}
+            #shareWidget{
+                display:none;
+            }
+          .state-icon-container{
+            margin-top: 5px;
+          }
+          .block-current-search {
+            float: left;
+            width: 100%;
+            height: 100%;
+          }
+		}
+
+		.logoSearchWrapper{
+			.searchWrapper{
+		      .busa-autocomplete-responce-container{
+		      	top:111px;
+		        width:100%;
+		      }
+		    }
+		}
+	}
+
+	.mobileOnly{
+		display:block;
+	}
+
+	//hides google translate from the mobile menu
+	#mm-m0-p0{
+		.leaf.translate{
+			display: none;
+		}
+	}
+
+
+	#navigation{display:none;}
+
+	/* search area */
+	.logoSearchWrapper{
+		padding-top:48px;
+		#logo{margin-bottom:28px;}
+		.sitewide-logo-and-search{
+			float:right;
+			position:relative;
+			input#sitewide-search-input{
+				border:1px solid #e3e7eb;
+				width:73%;
+				padding:0 22% 0 5%;
+                -webkit-border-radius: 0;
+                -webkit-appearance: none;
+			}
+			input#sitewide-search-button{
+				width:100px;
+				height:41px;
+				padding:0px;
+				background-color:#f75b49;
+				position:absolute;
+				top:0px;
+				right:0px;
+                -webkit-border-radius:0;
+                -webkit-appearance: none;
+			}
+		}
+	}
+
+	/* mobile menu button */
+	.toggleMobileMenu{
+		display:block;
+		height:42px;
+		width:45px;
+		float:right;
+		background: transparent url('../images/mobileMenuButton.png') no-repeat 0px 0px;
+		text-indent: -99999px;
+	}
+
+	/* footer */
+	.region-footer{
+		background-color:#fff;
+		.list1{
+			border-top: none;
+			width:96%;
+			padding:10px 2% 0px 2%;
+			li{
+				float:left;
+				margin:10px;
+				a{
+					background-color: #eee;
+					padding:10px;
+					display:block;
+                    font-family: latoblack, sans-seri;
+				}
+			}
+		}
+		.list2,
+		.list3,
+		.emailUpdates{
+			display:none;
+		}
+		.bottom p{
+			width:80%;
+		}
+	}
+
+	/***************************************/
+	/*     Search Results Page Title      */
+	/**************************************/
+	body.node-type-services,
+	body.node-type-program,
+	body.node-type-article,
+	body.node-type-blog,
+	body.node-type-data,
+	body.node-type-success-story,
+	body.node-type-tools,
+	body.node-type-federal-register,
+	body.node-type-grants,
+	body.node-type-green-sbir-topic,
+	body.node-type-business-news,
+	body.node-type-rules-status,
+	body.node-type-export-gov-micro-site-page,
+	body.node-type-wizard-result-reference-for-solr,
+	body.node-type-appointment-office,
+	body.node-type-state-resource,
+	body.node-type-swim-lane-page,
+	body.node-type-video,
+	body.node-type-featured-item,
+	body.node-type-whats-new,
+	body.node-type-browseregulations
+	{
+		#titleWrapper{
+			.title{
+				width: 100%;
+			}
+			.h1{
+				padding-top: 16px;
+			}
+		}
+		.region-content{
+			.node-blog{
+				padding: 15px;
+				.blog-image{
+					background: url("/sites/all/themes/bizusa/images/businessusa-tab.png") no-repeat;
+						width: 65px;
+						height: 60px;
+						margin-right: 10px;
+				}
+				.blog-content-container{
+					float: none;
+					padding: 0 3%;
+					width: 94%;
+				}
+			}
+		}
+	}
+
+	/********************
+	***   HELP LINK  ****
+	********************/
+	.helpArea{display:none}
+
+
+
+	/**********************
+	***   SHARE LINKS  ****
+	**********************/
+	#shareWidget{
+
+	}
+
+
+
+
+
+	/**********************
+	***   FRONT PAGE   ****
+	**********************/
+	body.front{
+		.region-frontcontent{
+			width:100%;
+		}
+		/* wizard list */
+		#block-views-wizard_list-block{
+			h2{display:none;}
+			.views-row .views-field-title .field-content a{
+				width:auto;
+				padding-left:45px;
+				overflow:hidden;
+			}
+
+			.views-row.start-a-business .views-field-title .field-content a{
+
+				background: transparent url('../images/wiz-start-a-business.png') no-repeat 0px 10px;
+			}
+			.views-row.resource-grow-your-business .views-field-title .field-content a{
+				background: transparent url('../images/wiz-grow-your-business.png') no-repeat 0px 10px;
+			}
+			.views-row.access-financing .views-field-title .field-content a{
+				background: transparent url('../images/wiz-access-financing.png') no-repeat 0px 10px;
+			}
+			.views-row.export .views-field-title .field-content a{
+				background: transparent url('../images/wiz-explore-exporting.png') no-repeat 0px 10px;
+			}
+			.views-row.find-opportunities .views-field-title .field-content a{
+				background: transparent url('../images/wiz-find-opportunities.png') no-repeat 0px 10px;
+			}
+			.views-row.veterans .views-field-title .field-content a{
+				background: transparent url('../images/wiz-veterans.png') no-repeat 0px 10px;
+			}
+			.views-row.disaster-assistance .views-field-title .field-content a{
+				background: transparent url('../images/wiz-disaster-assistance.png') no-repeat 0px 10px;
+			}
+			.views-row.select-usa .views-field-title .field-content a{
+				background: transparent url('../images/wiz-select-usa.png') no-repeat 0px 10px;
+			}
+			.views-row.jobcenter-wizard .views-field-title .field-content a{
+				background: transparent url('../images/wiz-jobs.png') no-repeat 0px 10px;
+			}
+			.views-row.healthcare .views-field-title .field-content a{
+				background: transparent url('../images/wiz-healthcare.png') no-repeat 0px 10px;
+			}
+			.views-row.taxes-and-credits .views-field-title .field-content a{
+				background: transparent url('../images/wiz-taxes.png') no-repeat 0px 10px;
+			}
+			.views-row.find-green-opportunities .views-field-title .field-content a{
+				background: transparent url('../images/wiz-green-opportunities.png') no-repeat 0px 10px;
+			}
+			.views-row.browseregulations .views-field-title .field-content a{
+				background: transparent url('../images/wiz-browse-regulations.png') no-repeat 0px 10px;
+			}
+			.views-row.tour .views-field-title .field-content a{
+				background: transparent url('../images/wiz-tour.png') no-repeat 0px 10px;
+			}
+			.views-row.training-materials-portal .views-field-title .field-content a{
+				background: transparent url('../images/wiz-training.png') no-repeat 0px 10px;
+			}
+
+		}
+		.view-wizard-list{
+			margin-bottom:25px;
+			.views-row{
+				background-color:#6885a2;
+				padding:0px 8%;
+				overflow:hidden;
+				.views-field-title,
+				.views-field-title .field-content,
+				.views-field-title .field-content a{
+					color: #fff;
+
+				}
+			}
+			.wizardSpotlight,
+			.wizardStandard,
+			.wizardBacklight{
+				float:none;
+				margin-right:auto;
+			}
+			.wizardBacklight{
+				background-color: inherit;
+				width:inherit;
+				height:inherit;
+				margin-right:inherit;
+			}
+		}
+		.locateResourceCenter{
+			background-color:#97e8c1;
+			color:#205589;
+			font-family: 'latoblack_italic', sans-serif;
+			height:50px;
+			line-height:50px;
+			padding:0px 40px;
+			font-size:16px;
+			text-decoration: none;
+			margin-bottom:25px;
+		}
+		#block-boxes-front_page_news_block{
+			background-color:#fff;
+			.slider{
+				list-style-type: none;
+				padding:0px;
+				margin:0px;
+				li{
+					display:none;
+					h2{
+						margin:0px 0px 30px 0px;
+						color:#f75b49;
+					}
+				}
+				li.frontpagenews-container-businessnews{
+					display:block;
+					padding:25px 40px;
+				}
+			}
+			.views-row{
+				float:left;
+				clear:both;
+				margin-bottom:35px;
+				.views-field-field-newsnote-icon{
+					float:left;
+					margin-right:15px;
+				}
+			}
+			.frontpagenews-container-businessnews{
+				.views-row{
+					.views-field-title{
+						float:left;
+						font-size:14px;
+						width:165px;
+						height:51px;
+						a{
+							color:#44809e;
+							text-decoration: none;
+							display:block;
+							width:100%;
+							height:51px;
+						}
+					}
+				}
+			}
+
+		}
+		#block-boxes-front_page_resources_and_events{
+			display:none;
+		}
+	}
+
+
+
+	/***************************************
+	***   REQUEST AN APPOINTMENT PAGE   ****
+	****************************************/
+	body.page-request-appointment-and-closest-resource-centers{
+
+        .region-content{
+            .resourcecenters-filter-container{
+                margin-right:0;
+                margin-bottom: 20px;
+                width:100%;
+
+                .resourcecenters-filter-submit{
+                  margin-bottom: 20px;
+                  border-radius: 0;
+                  -moz-border-radius: 0;
+                  -webkit-border-radius: 0;
+                  border: 0;
+                  background: #6885a2;
+                  color: #fff;
+                  font-family: latoblack;
+                  padding: 16px 5%;
+                  width:30%;
+                  margin:20px 30%;
+                }
+                .zipRadius{
+                    .resourcecenters-filter-rangearea{
+                      width: auto;
+                    }
+                }
+            }
+            #dataList{
+                h2{
+                    margin-bottom: 0;
+                }
+                .itemList{
+                	float:left;
+                	clear:both;
+                	margin-bottom:20px;
+                    width: 100%;
+                    .view-closes-resource-center-retheme{
+                      float:left;
+                      background:#fff;
+                      width:100%;
+                        .views-row{
+                            position: relative;
+                            padding-left: 4%;
+                            margin-bottom: 15px;
+							.views-field-php-1 {
+								float: left;
+								clear: both;
+								width: 25px;
+								margin-right: 15px;
+							}
+                            .views-field-title{
+								margin-top: 15px;
+								margin-left: 40px;
+                            }
+                            .views-field-counter{
+                                position: absolute;
+                                left:10px;
+                                width:10%;
+                            }
+                            .views-field-nothing, .views-field-php, .views-field-field-appoffice-type, .views-field-field-appoffice-phone, .views-field-field-program-loc {
+								margin-left: 40px;
+							}
+                        }
+                    }
+                }
+            }
+        }
+        .resourcecenters-googlemap-container{
+          margin-top: 0;
+          padding-bottom: 20px;
+
+        }
+        .resourcecenters-googlemap-container{
+            width:100%;
+            height: 300px;
+            #map-canvas{
+              width:100%;
+            }
+        }
+  	}
+
+  	/***************************************
+	***   REQUEST AN APPOINTMENT FORM   ****
+	****************************************/
+	body.page-request-appointment-form{
+		.region-content{
+			.requestform-container{
+				.appt-form{
+					.timeofvisit-input-container{
+						#dk_container_timeofvisit{
+							width: 96% !important;
+							margin-left: 4%;
+							.dk_toggle.dk_label{
+								width: 74% !important;
+							}
+							.dk_options{
+								width: 80%;
+								left: 0;
+							}
+						}
+					}
+				}
+			}
+			#timeofvisit{
+				width: 100px;
+			}
+		}
+	}
+
+
+	/**************************
+	***   JOB CENTER PAGE   ***
+	***************************/
+
+	body.page-jobcenter-wizard{
+		#block-system-main{
+            .question-controle-widget-type-textbox {
+                .question-controle{
+                  width: 190px;
+                  //font-size: 10px;
+                }
+            }
+			.wizard-sidebars-container{
+				.jobcenters-top-section{
+					width: 100%;
+
+				}
+				.jobcenterajax-container {
+					.jobcenteroffice-result {
+						.jobcenteroffice-result-hours{
+							.jobcenteroffice-result-hours-label {
+								margin-right: 10px;
+								float: left;
+							}
+
+						}
+						.jobcenteroffice-result-phone{
+							.jobcenteroffice-result-phone-label {
+								float: left;
+								margin-right: 10px;
+							}
+
+						}
+						.jobcenteroffice-result-description{
+							.jobcenteroffice-result-description-label {
+								float: left;
+								margin-right: 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+  	/***************************************
+	***   SEARCH PAGE   ****
+	****************************************/
+	body.page-search{
+		#titleWrapper{
+			h1{
+				font-size: 28px;
+				letter-spacing: -.5px;
+				padding-right: 30px;
+				margin-right: 30px;
+				border-right: 1px dotted #ccc;
+			}
+			.current-search-item{
+				margin-top: 24px;
+				float: left;
+				font-size: 16px;
+				padding-left: 10px;
+				color: #505050;
+				font-family: 'latoitalic',sans-serif;
+				line-height: 15px;
+                width: 40%;
+				div{
+					background-color: #E8E8E8;
+					font-size: 12px;
+					color: #282828;
+					padding: 5px 5px;
+					line-height: 15px;
+					margin-top: -5px;
+				}
+                .search-export-container{
+                  background-color: #ffffff;
+                }
+			}
+            .current-search-item:last-child{
+                max-width: 83%;
+                width: 7%;
+
+            }
+		}
+		.region.region-content{
+			width:100%;
+			float: left;
+			#search-form{
+				display: none;
+			}
+			.searchresults-topwizardarea-wizarditem-colorspacer{
+				float: left;
+				margin-bottom: 15px;
+				.searchresults-topwizardarea-wizarditem-leftright-container{
+					background-color: #E8E8E8;
+					margin-left: 5px;
+					padding: 15px;
+					float: left;
+					.searchresults-topwizardarea-wizarditem-leftside{
+						width:170px;
+						float: left;
+					}
+					.searchresults-topwizardarea-wizarditem-rightside{
+						width: 290px;
+						font-size: 14px;
+						color: #202020;
+						float: left;
+					}
+				}
+			}
+			.search-results{
+				.search-result-container{
+					float: left;
+			        background-color: #fff;
+			        padding: 20px 5% 10px 5%;
+			        width: 90%;
+			        .search-result-content-type{
+				        float: left;
+				        width: 60px;
+				        text-align: center;
+				        text-transform: uppercase;
+				        letter-spacing: -.5px;
+				        color: #6885A2;
+				        font-size: 11px;
+				        margin-right: 10px;
+						word-wrap: break-word;
+						font-family: "latoitalic",sans-serif;
+				    }
+				    .search-result-panel-content{
+				        float: left;
+				        width: 60%;
+				        h3{
+					        margin:0px 0px 5px 0px;
+					        font-weight: normal;
+					        font-size: 16px;
+					    }
+					    p{
+					        color: #202020;
+					        font-size: 14px;
+					        line-height: 16px;
+					    }
+					    .search-score{
+					        display: none;
+					    }
+				    }
+			    }
+			}
+
+			.search-acrossbusinessagencies-mastercontainer{
+				border: 4px solid #ffffff;
+				background-color: #F8F8F8;
+				margin-top: 20px;
+				margin-bottom: 10px;
+				float: left;
+				.search-acrossbusinessagencies-innercontainer{
+					padding: 15px 20px 0px 20px;
+					.search-acrossbusinessagencies-title a{
+						font-weight: normal;
+						font-size: 17px;
+						font-family: 'latoitalic',sans-serif;
+					}
+					.search-acrossbusinessagencies-results-container{
+						margin:15px 0px 0px 0px;
+						.search-acrossbusinessagencies-result-container{
+							margin-bottom: 20px;
+							font-size: 13px;
+							color: #202020;
+							.search-acrossbusinessagencies-result-titlelinked a{
+								font-size: 14px;
+								font-family: 'latoitalic',sans-serif;
+							}
+						}
+					}
+				}
+			}
+			.pager{
+				margin-top: 30px;
+				float: left;
+				a{
+					font-size: 15px;
+				}
+				li{
+					float: left;
+				}
+				.pager-first{
+					display: none;
+
+				}
+				.pager-current{
+					font-family: 'latoregular',sans-serif;
+					color: #A8A8A8;
+					font-size: 15px;
+				}
+				.pager-next a{
+					display: block;
+					width: 21px;
+					height: 21px;
+					text-indent: -9999999px;
+					background: url("../images/pager-next.png") no-repeat transparent;
+				}
+				.pager-previous a{
+					display: block;
+					width: 21px;
+					height: 21px;
+					background: url("../images/pager-previous.png") no-repeat transparent;
+					text-indent: -9999999px;
+				}
+				.pager-ellipsis{
+					font-size: 25px;
+					line-height: 0px;
+					margin: 0px;
+				}
+				.pager-last.last{
+					display:none;
+				}
+			}
+		}
+		.region.region-sidebar-first{
+			width: 100%;
+			float: right;
+			background-color: #fff;
+			#block-boxes-search_page_refine_by_title{
+				h1{
+					text-transform: uppercase;
+					font-size: 13px;
+					background-color: #E8E8E8;
+					color: #505050;
+					padding: 18px 0px 18px 18px;
+					margin:0px;
+					font-weight: normal;
+					font-family: "latoblack",sans-serif;
+				}
+				.boxes-box-controls .links{
+					margin: 0px;
+				}
+			}
+			.block-facetapi{
+				padding: 0px 0px 20px 0px;
+				border-bottom:1px solid #ccc;
+				margin: 18px;
+				h2.block-title{
+					margin:0px 0px 10px 0px;
+					font-size: 12px;
+					color: #6885A2;
+					text-transform: uppercase;
+					font-family: 'latoblack',sans-serif;
+					font-weight: normal;
+				}
+				.item-list{
+					ul.facetapi-facetapi-checkbox-links{
+						float: left;
+						width: 100%;
+						li.leaf{
+							list-style: none;
+							margin-left: 0px;
+							font-size: 12px;
+							color: #505050;
+							padding: 2px 0px;
+							width: 100%;
+							font-family: 'latoregular',sans-serif;
+							float: left;
+							clear: both;
+							.prettycheckbox{
+								float: left;
+								a{
+									background: url("../images/icons/prettyCheckable-bizusa.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+									width: 14px;
+									height: 13px;
+									margin-top: 0px;
+									margin-right: 5px;
+									&.checked{
+										background: url("../images/icons/prettyCheckable-bizusa.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+										background-position: 0 -13px;
+									}
+								}
+								label{
+									margin: 0;
+								}
+
+							}
+							a.facetapi-checkbox-processed{
+								color: #797979;
+								font-family: 'latoregular',sans-serif;
+								display: inline-block;
+								float: left;
+								width: 90%;
+								&:hover{
+									text-decoration: underline;
+								}
+								span.facet-result-count{
+									background-color: #F0F0F0;
+									font-size: 10px;
+									line-height: 12px;
+									padding: 3px;
+									color:  #606060;
+									float: right;
+								}
+							}
+						}
+					}
+					a.facetapi-limit-link{
+						font-family: "latoblack_italic",sans-serif;
+						font-weight: normal;
+						font-size: 12px;
+						&:after{
+						   content: " \00BB";
+						}
+					}
+				}
+
+			}
+			.block-facetapi.last{
+				border-bottom: 0px solid #fff;
+			}
+		}
+
+	}
+
+
+	/****************************
+	***   SWIM LANE STYLES   ****
+	****************************/
+	body.page-resource{
+		.mm-page{
+			.wrapper{
+				#contentArea{
+					.region.region-content{
+						width: 100%;
+						#block-system-main{
+							.legacyswimlane-mastercontainer{
+								width: 100%;
+								.legacyswimlane-bodycontainer{
+									width: 100%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		.legacyswimlane-mastercontainer{
+			.subnav-container{
+				display:none !important;
+				ul{
+					margin:40px 0px 0px 20px;
+					background: none;
+				}
+			}
+			.legacyswimlane-section{
+				padding: 5%;
+				width:90%;
+				ul{
+					li{
+						width:100%;
+					}
+					li.odd{
+						margin-right:0px;
+					}
+				}
+			}
+			.legacyswimlane-foot-container{
+				display:none;
+			}
+		}
+	}
+
+
+
+
+	/****************************************
+	***   SBIR Certification Tool PAGE   ****
+	*****************************************/
+
+	body.page-sbir-certification-tool, .sbir-certification-tool-mastercontainer-wrapper {
+		.sbir-certification-tool-mastercontainer{
+			background-color: #fff;
+			float:left;
+			clear:both;
+			width: 100%;
+		}
+        .sbir-certification-tool-welcomemessage{
+            background-color: #fff;
+			display: block;
+			padding: 20px;
+        }
+		.sbir-certification-tool-contentcontainer{
+			float: left;
+			max-width: 675px;
+			width: 100%;
+		}
+        .roweven, .rowodd{
+			display: block;
+			width: 100%;
+            float: left;
+			margin-bottom: 2px;
+        }
+
+        .cell1{
+            display: block;
+            width: 94%;
+			height: 100%;
+            float: left;
+            padding: 3%;
+			font-size: 16px;
+			font-family: latoblack;
+			background-color: #6885a2;
+			color: #fff;
+        }
+        .cell2{
+            display: none;
+            width: 55%;
+            float: left;
+            padding: 3%;
+			margin-right: 20px;
+        }
+        .cell3{
+			display: none;
+            text-align: center;
+			padding-top: 2%;
+			position: relative;
+			width: 25%;
+			float: left;
+        }
+
+		.cell3 img{
+			height: 43px;
+			//border:1px solid #ff4400;
+			padding: 0 10px;
+			margin-top: 8px;
+			&#profit_pass{
+				margin-bottom: 75px;
+			}
+		}
+
+		.cell3 label{
+			font-size: 12px;
+			line-height: 14px;
+			text-transform: uppercase;
+			font-family: "latoblack_italic",sans-serif;
+		}
+
+		#eligibility-message{
+
+			padding: 3%;
+			float: left;
+			background-color: #fff;
+			margin-left: 10px;
+			width: 90%;
+			margin-top: 25px;
+			padding-bottom: 50px;
+			#success_message{
+				float: left;
+				img{
+					float: left;
+					margin-top: 12px;
+					margin-right: 10px;
+				}
+				p{
+					float: left;
+					width: 86%;
+					margin-bottom: 35px;
+				}
+
+			}
+			#fail_message{
+				float: left;
+				img{
+					float: left;
+					margin-top: 12px;
+					margin-right: 10px;
+				}
+				p {
+					margin-left: 35px;
+					margin-bottom: 35px;
+				}
+
+			}
+			.btn-Continue{
+				cursor: pointer;
+				text-align: center;
+				a{
+					color: #fff;
+					padding: 20px 9px;
+					background-color: #f75b49;
+				}
+			}
+		}
+
+		.btn-next{
+			background-color: #6885a2;
+			color: #fff;
+			font-family: 'latoblack', sans-serif;
+			font-size: 13px;
+			text-transform: uppercase;
+			padding: 15px 25px;
+			float: right;
+		}
+
+		.downarrow{
+			float: right;
+			height: 10px;
+			padding-top: 5px;
+		}
+		.rowselected .cell2,
+		.rowselected .cell3{
+			display: block;
+		}
+		.radiobutton,
+		{
+			height: 20px;
+			position: relative;
+			top: 5px;
+		}
+
+		.options{
+			padding-right: 10px;
+		}
+		.btn-next{
+			background-color: #6885a2;
+			color: #fff;
+			font-family: 'latoblack', sans-serif;
+			font-size: 13px;
+			text-transform: uppercase;
+			padding: 15px 25px;
+			float: right;
+		}
+
+		label{
+			font-weight: normal;
+		}
+		#lblprofit{
+			margin-top: 10px;
+			margin-bottom: 90px;
+		}
+		#lbllocation {
+			margin-top: 20px;
+			float: left;
+			width: 100%
+		}
+		#lblownership,
+		#lblemployee{
+			margin-top: 20px;
+		}
+
+		#div_profit{
+			margin-bottom: 50px;
+		}
+
+
+		.ptacLightBoxWrapper,
+			.vendorLightBoxWrapper,
+			.jobLightBoxWrapper {
+			font-size: 15px;
+			font-weight: bold;
+			line-height: 25px;
+			width:500px;
+		}
+
+		.ptacLightBox-logo-innerwrapper,
+		.vendorLightBox-logo-innerwrapper,
+		.jobLightBox-logo-innerwrapper{
+			float:left;
+			margin: 15px 0px 0px 15px;
+			width:250px;
+		}
+		.kill-ptacLightBox,
+		.kill-vendorLightBox,
+		.kill-jobLightBox{
+			position:absolute;
+			right:20px;
+			top:20px;
+			cursor: pointer;
+			font:12px Bitter-Regular,Times,serif;
+			background-color:#15567B;
+			color:whiteSmoke;
+			font-weight:bold;
+			padding: 1em;
+		}
+		.kill-ptacLightBox img,
+		.kill-vendorLightBox img,
+		.kill-jobLightBox img{
+			width: 35px;
+			margin: 0px;
+			margin-right: 10px;
+		}
+		.ptacLightBox-logo,
+		.vendorLightBox-logo,
+		.jobLightBox-logo{
+			background-color:#ebebeb;
+			position:relative;
+			overflow: auto !important;
+			border-bottom: 1px solid #808080;
+			height: 80px;
+		}
+		.ptacLightBox-msg-area,
+		.vendorLightBox-msg-area,
+		.jobLightBox-msg-area{
+			font-weight:normal;
+			padding:10px 24px;
+		}
+		.ptacLightBox-msg-area p,
+		.vendorLightBox-msg-area p,
+		.jobLightBox-msg-area p{
+			padding-top:5px;
+		}.ptacLightBox-logo-innerwrapper,
+		.vendorLightBox-logo-innerwrapper,
+		.jobLightBox-logo-innerwrapper{
+			float:left;
+			margin: 15px 0px 0px 15px;
+			width:250px;
+		}
+		.kill-ptacLightBox,
+		.kill-vendorLightBox,
+		.kill-jobLightBox{
+			position:absolute;
+			right:20px;
+			top:20px;
+			cursor: pointer;
+			font:12px Bitter-Regular,Times,serif;
+			background-color:#15567B;
+			color:whiteSmoke;
+			font-weight:bold;
+			padding: 1em;
+		}
+		.kill-ptacLightBox img,
+		.kill-vendorLightBox img,
+		.kill-jobLightBox img{
+			width: 35px;
+			margin: 0px;
+			margin-right: 10px;
+		}
+		.ptacLightBox-logo,
+		.vendorLightBox-logo,
+		.jobLightBox-logo{
+			background-color:#ebebeb;
+			position:relative;
+			overflow: auto !important;
+			border-bottom: 1px solid #808080;
+			height: 80px;
+		}
+		.ptacLightBox-msg-area,
+		.vendorLightBox-msg-area,
+		.jobLightBox-msg-area{
+			font-weight:normal;
+			padding:10px 24px;
+		}
+		.ptacLightBox-msg-area p,
+		.vendorLightBox-msg-area p,
+		.jobLightBox-msg-area p{
+			padding-top:5px;
+		}
+
+		#cboxOverlay{
+			cursor: pointer;
+			display: block;
+			background: #000;
+			opacity: 0.4;
+			position: fixed;
+			width: 100%;
+			height: 120%;
+		}
+
+		#colorbox {
+			padding-bottom: 38px;
+			padding-right: 0px;
+			top: 180px;
+			left: 804px;
+			position: absolute;
+			width: 298px;
+			height: 119px;
+			opacity: 1;
+			cursor: auto;
+			display: block;
+			background: none;
+			box-shadow: none;
+			-webkit-box-shadow: none;
+		}
+		#cboxContent {
+			width: 298px;
+			height: 119px;
+			background: #fff;
+			overflow: visible;
+			margin-bottom: 28px;
+			float:none;
+			position: relative;
+		}
+
+		#cboxLoadedContent{
+			height: 325px;
+			width: 500px;
+			overflow: visible;
+			}
+
+		#cboxLoadingOverlay {
+			background: #e6e6e6;
+		}
+		#cboxLoadingOverlay, #cboxLoadingGraphic {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+		}
+
+		#cboxTitle {
+			left: 0;
+			height: 38px;
+			color: #313131;
+			padding: 0 140px 0 15px;
+			vertical-align: middle;
+			margin: 0;
+			display: block;
+			float: left;
+		}
+
+		#cboxClose {
+			position: absolute;
+			top: -10px;
+			right: -10px;
+			background: url(/sites/all/themes/bizusa/images/sbir-images/controls.png) 0px 0px no-repeat;
+			width: 25px;
+			height: 25px;
+			text-indent: -9999px;
+			opacity: 1;
+			cursor: pointer;
+		}
+		#cboxMiddleRight {
+			width: 0;
+			height: 119px;
+			float: left;
+		}
+
+		#cboxError {
+			padding: 50px;
+			border: 1px solid #ccc;
+		}
+
+		#colorbox div {
+			overflow: visible;
+		}
+
+		#cboxWrapper {
+			height: 157px;
+			width: 298px;
+			border-bottom-left-radius: 9px;
+			border-bottom-right-radius: 9px;
+			-moz-border-radius-bottomleft: 9px;
+			-moz-border-radius-bottomright: 9px;
+			-webkit-border-bottom-left-radius: 9px;
+			-webkit-border-bottom-right-radius: 9px;
+		}
+		#colorbox, #cboxOverlay, #cboxWrapper {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 9999;
+			overflow: visible !important;
+		}
+
+		#cboxTopLeft, #cboxTopRight{
+			float: left;
+		}
+		#cboxTopCenter{
+			float: left;
+			width: 298px;
+		}
+
+		#cboxMiddleLeft{
+			float: left;
+			height: 119px;
+			width: 0;
+		}
+		#cboxMiddleLeft, #cboxBottomLeft {
+			clear: left;
+		}
+	}
+
+
+	/********************************
+	***   WIZARDS CONTENT CSS   ****
+	*********************************/
+	body.page-contains-wizard{
+		.slide{
+			width:100%;
+			min-height: 390px;
+			background-position: 50% 30px;
+			background-image:none !important;
+			.questions{
+				margin-left: 15px;
+                .question-container{
+                  margin: 0px 0 0;
+                }
+                .question-container.widget-type-label{
+                	margin-top:20px;
+                	margin-bottom:10px;
+                }
+				.widget-type-checkbox{
+                  .question-controle-container{
+                    padding-top:10px;}
+					.question-label{
+                        margin-left: -55px;
+                        padding-left: 55px;
+                        padding-top: 10px;
+                        height: auto;
+						width: 70%;
+						font: 14px/22px 'latoregular', sans-serif;
+					}
+				}
+				.widget-type-radio-group{
+					.question-label{
+						font: 18px/22px 'latoregular', sans-serif;
+					}
+					.question-controle-container{
+                      padding-top:10px;
+						label{
+							width: 85%;
+							display: block;
+                            margin-bottom: 10px;
+							font: 18px/25px 'latoregular', sans-serif;
+                            margin-left: 35px;
+						}
+					}
+				}
+			}
+			.wizard-continue{
+				text-align: center;
+				margin-left:15px;
+			}
+		}
+
+		.slide-id-0{
+			.questions{
+				margin-top: 20px;
+				padding: 0px;
+				margin-left: 0px;
+                float: left;
+                .splash-welcome{
+                  padding: 0px 3% ;
+                  width: 94%
+                }
+				.splash-button{
+					input{
+						width: 100%;
+						cursor: pointer;
+						margin-left: 0px;
+						font: 20px 'latoitalic', sans-serif;
+					}
+				}
+			}
+		}
+		.wizard-uniqueid-selectusa .slide-id-5,
+		.wizard-uniqueid-selectusa .slide-id-9{
+			.wizard-continue{
+				margin-left: 15px;
+			}
+		}
+
+		/* wizard tabs */
+		.mobile-slide-seeker{
+			float:left;
+			clear:both;
+			width:100%;
+			border-top: 1px solid #eff2f5;
+			background-color: #6885a2;
+			a{
+				font-family: 'latoblack_italic', sans-serif;
+				display: block;
+				height: 100%;
+				width: 80%;
+				padding-left:20%;
+				line-height: 55px;
+				color:#fff;
+
+			}
+		}
+		.slide-current.touched.mobile-slide-seeker{
+			background: #6885a2 url("../images/wizMobileCurrent.png") no-repeat 8% center;
+		}
+		.touched.mobile-slide-seeker{
+			background: #6885a2 url("../images/wizMobileTouched.png") no-repeat 8% center;
+		}
+		.untouched.mobile-slide-seeker{
+			background: #6885a2 url("../images/wizMobileUntouched.png") no-repeat 8% center;
+		}
+		.mobile-slide-seeker a{
+			background: transparent url("../images/wizMobileDown.png") no-repeat 92% center;
+		}
+		.slide-current.mobile-slide-seeker a{
+			background: transparent url("../images/wizMobileUp.png") no-repeat 92% center;
+		}
+
+
+	/***************************************
+	***   WIZARDS GENERAL RESULTS STYLES   ****
+	****************************************/
+
+		.wizard-results-wrapper.has-sidebar-true{
+			.wizard-result-sections-container{
+				width:92%;
+			}
+			.wizard-sidebars-container{
+				width:94%;
+			}
+		}
+		.ajax-container{
+			.wizard-results-wrapper{
+				.wizard-results-header-container{
+					width: 100%;
+					.wizard-results-header-resultcounts-container{
+						width: 100%;
+					}
+					.wizard-results-header-exportexcel,
+					.wizard-results-header-exportemail{
+						float: left;
+					}
+				}
+			}
+		}
+
+	}
+
+	/********************************
+	***   TRAINING PAGE   ****
+	*********************************/
+	body .view-Training-materials{
+		.view-filters{
+			ul.training-materials-filter-list,
+			.ctools-auto-submit-full-form{display:none;}
+			.views-exposed-widget{
+				padding: 0px;
+				width: 100%;
+				fieldset{
+					margin: 0px;
+					padding: 0px;
+					border: none;
+					height: 100%;
+					&.collapsible .fieldset-legend{
+						background-image: url("../images/icons/menu-expanded.png");
+					}
+					&.collapsed .fieldset-legend{
+						background-image: url("../images/icons/menu-collapsed-rtl.png");
+					}
+					legend{
+						text-transform: uppercase;
+					    font: 15px "latoblack", sans-serif;
+					    background-color: #6885a2;
+					    padding: 20px 0px;
+					    display: block;
+					    width: 100%;
+					    span.fieldset-legend{
+					    	padding: 0px 0px 0px 20px;
+					    	background-position: 95% center;
+					    }
+					    a{
+					    	color: #fff;
+					    	font:18px "latoblack_italic", sans-serif;
+					    }
+					}
+					.fieldset-wrapper{
+						float: left;
+						clear: both;
+						background-color: #fff;
+						//border: 1px solid #ccc;
+						padding: 2%;
+						width: 96%;
+						a.bef-toggle{
+							display: none;
+						}
+						.bef-checkboxes{
+							padding: 10px 0;
+							background-color: #fff;
+							float: left;
+							width: 100%;
+							.form-item{
+								float: left;
+								clear: both;
+								margin-bottom: 10px;
+								margin-left: 3%;
+								width: 97%;
+								.prettycheckbox{
+									float: left;
+									a{
+										background: url("../images/icons/prettyCheckable-bizusa.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+										width: 14px;
+										height: 13px;
+										margin-top: 3px;
+										margin-left: 5px;
+										&.checked{
+											background: url("../images/icons/prettyCheckable-bizusa.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+											background-position: 0 -13px;
+										}
+									}
+									label{
+										margin: 0;
+									}
+								}
+								label{
+									display: block;
+								    float: left;
+								    font-size: 12px;
+								    font-weight: normal;
+								    line-height: 18px;
+								    width: 79%;
+								    margin-left: 3%;
+								    cursor: pointer;
+								    &:hover{
+								    	text-decoration: underline;
+								    }
+								}
+							}
+						}
+					}
+				}
+			}
+
+		}
+		.views-table{
+			display: none;
+		}
+		#mobile-accordion {
+		    list-style: none;
+		    padding: 0 0 0 0;
+		    width: 100%;
+		    display: block;
+		    .title-field {
+			    display: block;
+			    cursor: pointer;
+			    background-color: #6885a2;
+			    color: #fff;
+			    font: 18px "latoblack_italic", sans-serif;
+			    padding: 20px 80px 20px 15px;
+			    border-bottom: 3px solid #fff;
+			    background-image: url("../images/training/arrow.png");
+			    background-repeat: no-repeat;
+			    background-position: 95% center;
+			}
+			.training-content{
+			    display: none;
+			    padding: 20px;
+			    background-color: #fff;
+			    margin-bottom: 70px;
+			    .agency-field{
+				    font: 20px "latoblack_italic", sans-serif;
+				    color: #6885a2;
+				    padding-bottom: 5px;
+				}
+				.description-field{
+				    font: 20px "latoregular", sans-serif;
+				    color: #6b6b6b;
+				}
+				.mediatype-field{
+				    margin-top: 20px;
+				    img{
+					    display: block;
+					    float: left;
+					}
+					span{
+					    text-transform: capitalize;
+					    font: 15px "latoregular", sans-serif;
+					    color: #6885a2;
+					    line-height: 45px;
+					    display: block;
+					    float: left;
+					}
+				}
+				.learnmore-field{
+				    float: right;
+				}
+				.learnmore-field a{
+				    text-transform: uppercase;
+				    font: 15px "latoblack", sans-serif;
+				    background-color: #6885a2;
+				    padding: 20px 25px;
+				    color: #fff;
+				    display: block;
+				}
+			}
+		}
+		.pager{
+			margin-top: 30px;
+			float: left;
+			a{
+				font-size: 15px;
+			}
+			li{
+				float: left;
+			}
+			.pager-first{
+				display: none;
+
+			}
+			.pager-current{
+				font-family: 'latoregular',sans-serif;
+				color: #A8A8A8;
+				font-size: 15px;
+			}
+			.pager-next a{
+				display: block;
+				width: 21px;
+				height: 21px;
+				text-indent: -9999999px;
+				background: url("../images/pager-next.png") no-repeat transparent;
+			}
+			.pager-previous a{
+				display: block;
+				width: 21px;
+				height: 21px;
+				background: url("../images/pager-previous.png") no-repeat transparent;
+				text-indent: -9999999px;
+			}
+			.pager-ellipsis{
+				font-size: 25px;
+				line-height: 0px;
+				margin: 0px;
+			}
+			.pager-last.last{
+				display:none;
+			}
+		}
+	}
+
+	/************************************************
+	***   TRAINING MATERIALS - NODE TYPE   ****
+	************************************************/
+	body.node-type-training-materials{
+		.wrapper{
+			.region-content{
+				.block-system{
+					.node-training-materials{
+						.training-materials-maincontent{
+							width: 100%;
+						}
+						.training-materials-sidebar{
+							margin-top: 10px;
+							width: 100%;
+							.training-materials-related-videos{
+								float: left;
+								width: 100%;
+								margin-left: 0%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	/***********************************
+	***  ICON FOR WIZARDS           ****
+	************************************/
+	body.page-start-a-business, body.page-access-financing,
+	body.page-export, body.page-find-opportunities,
+	body.page-resource-grow-your-business, body.page-taxes-and-credits,
+	body.page-jobcenter-wizard, body.page-select-usa,
+	body.page-veterans, body.page-tour, body.page-disaster-assistance,
+	body.page-find-green-opportunities, body.page-healthcare, body.page-browseregulations,
+	body.page-expand-exporting, body.page-begin-exporting,
+    body.page-rural-exporting{
+		.splash-icon-image {
+			display: block;
+			padding: 19px 19px 0 19px;
+		}
+		.wizard-splash-icon {
+			height: 48px;
+		}
+		.splash-title {
+			width: 100% !important;
+			margin-left: 4%;
+		}
+
+	}
+
+    body.page-rural-exporting{
+        #block-system-main{
+            .ajax-container{
+                .wizard-results-wrapper.has-sidebar-true{
+                    .wizard-result-sections-container{
+                        width: 94%;
+                        margin-bottom: 15px;
+                        .note-rural-exporting-container{
+                            #note-rural-exporting{
+                                .btn-close {
+                                    right: 0px;
+                                    left: inherit;
+                                    top: 0px;
+                                }
+                            }
+                        }
+                    }
+                    .wizard-sidebars-container{
+                        width: 100%;
+                        .share-export-email-container{
+                            display: none;
+                        }
+                        .wizard-sidebar{
+                            .wizard-sidebar-top-section{
+                                .wizard-sidebar-title{
+                                    width: 94%;
+                                    padding: 20px 3%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+	/**********************************
+	****  BROWSE REGULATIONS         **
+	**********************************/
+	body.page-browseregulations{
+		.dk_options_inner li a{
+			white-space: normal;
+		}
+		.dk_toggle{
+			min-width: 150px;
+		}
+		#wiztag-keyword_textbox{
+			width: 166px;
+		}
+		.ajax-container,
+		.wizard-results-wrapper,
+		.wizard-result-sections-container,
+		.wizard-sidebars-container{
+			margin-right:0px !important;
+			padding-right:0px !important;
+			width:100% !important;
+		}
+		.wizard-results-header-resultcounts-container{
+			padding: 5% !important;
+			width:90% !important;
+		}
+		.share-export-email-container{
+			display:none;
+		}
+		.yawizard-pagedresults-page{
+			width:71% !important;
+			float:right;
+			.wizard-result-section-result{
+				width:100% !important;
+				padding-left:0px !important;
+				margin-left:0px !important;
+			}
+		}
+
+	}
+
+	/********************************
+	****  FIND OPPORTUNITIES WIZARD **
+	**********************************/
+	body.page-find-opportunities{
+        #txtgosearch-container{
+           margin-bottom: 15px;
+        }
+		#findopportunities-search-container{
+			margin-bottom: 25px;
+			text-align: center;
+		}
+		#findopportunities-searchtxt {
+			display: inline-block;
+		}
+		#txtgosearch {
+			width: 175px;
+			margin-right: 10px;
+		}
+		.wizard-goButton-inner{
+			display: inline-block;
+			input{
+				font-size: 18px;
+			}
+		}
+		.more-fbo-open-link {
+			float: right;
+			background-color: #f75b49;
+			width: 101px;
+			height: 45px;
+			margin-bottom: 15px;
+		}
+		#ancmorefbo_and {
+			display: inline-block;
+			padding: 15px 23px 15px 23px;
+			color: #fff;
+		}
+		.question-controle-widget-type-textbox {
+			width: 100%;
+			.question-controle{
+				width: 60%;
+			}
+		}
+		.slide{
+			.questions {
+				margin-top: 25px;
+				.question-container{
+					margin: 0;
+				}
+				.widget-type-checkbox{
+					.question-label{
+						height: auto;
+                        word-break: break-word;
+					}
+				}
+			}
+		}
+	}
+
+
+	/********************************
+	***   FEDERAL RESOURCES PAGE   ****
+	*********************************/
+
+	body.page-federal-resources{
+		.greensba-section-container{
+			background-color: #fff;
+			float:left;
+			clear:both;
+			padding:35px;
+		}
+		.greensba-section{
+			width: 100%;
+			float: left;
+			margin-right:2%;
+			margin-bottom: 20px;
+			ul{height: 96px; overflow: hidden; border: 1px solid #EEEEEE; border-radius: 0 0 5px 5px; margin: 0; padding: 0;}
+			ul li{list-style: none; padding: 9px;}
+			ul li:nth-child(even) {background-color: #F9F9F9;}
+		}
+
+		.greensba-section-header {
+			background-color: #E9E9E9;
+			color: #5C5C5C;
+			font-family: bitter-bold;
+			line-height: 36px;
+			padding: 5px 10px;
+			font-size: 18px;
+		}
+		.viewmoreless{
+			float: right;
+			border: 1px solid #EEEEEE;
+			border-radius: 3px;
+			background-color: #F9F9F9;
+			padding: 5px;
+		}
+		.morelessrow{
+			margin: 5px 0;
+		}
+		a.viewmoreless{
+			margin-bottom: 30px;
+		}
+	}
+
+
+	/***************************************************************
+	***   FULL TIME EMPLOYEE CALCULATOR PAGE STYLES   **** **** ****
+	******************************************** **** **** **** ****/
+	body.page-full-time-employee-calculator{
+		.empcalculator-mastercontainer{
+
+			.empcalculator-input-ui {
+				.empcalculator-input-ui-input1-ui, .empcalculator-input-ui-input2-ui{
+					float: left;
+					width: 100%;
+					padding-top:10px;
+					margin-bottom: 25px;
+				}
+
+				.empcalculator-input-ui-label.empcalculator-input-ui-label-1, .empcalculator-input-ui-label.empcalculator-input-ui-label-2 {
+					line-height: 15px;
+					font-size: 15px;
+					padding-bottom: 15px;
+					display: inline-block;
+					width: 100%;
+				}
+				.empcalculator-input-ui-input.empcalculator-input-ui-input-1, .empcalculator-input-ui-input.empcalculator-input-ui-input-2{
+					width: 100%;
+					input{
+						width: 100%;
+					}
+				}
+			}
+			.empcalculator-controles-ui {
+				text-align: left;
+				float: left;
+			}
+			.empcalculator-specialcountingrules-btncontainer{
+				display: inline-block;
+				margin: 20px 0px 0px 0px;
+				width: 100%;
+				input {
+					cursor: pointer;
+					padding-top: 10px;
+					color: #1a6894;
+				}
+			}
+			.empcalculator-results-ui-container{
+				.empcalculator-results-ui-1{
+					width: 100%;
+					margin-bottom: 30px;
+					.empcalculator-results-ui-1-leftside{
+						//padding-left: 35%;
+						width: 100%;
+						.empcalculator-giantnumber{
+							padding-right: 0;
+							text-align: center;
+    						width: 100%;
+						}
+					}
+				}
+				.empcalculator-results-ui-2{
+					width: 100%;
+				}
+			}
+		}
+		#colorbox{
+			.empcalculator-specialcountingrules-colorboxcontents-container{
+              width: 350px;
+              padding: 25px;
+			}
+		}
+	}
+
+	/***********************
+	***   EVENTS LISTING PAGE   ****
+	***********************/
+	body.page-events{
+		.wrapper{
+            #form-events-listings-and-filters{
+                width:100%;
+                margin-bottom: 20px;
+
+                #event-search-filters{
+                    .accordion-header{
+                      width: 94%;
+                      padding: 20px 3%;
+                    }
+                    .filter-options-wrapper{
+                        padding: 20px 3%;
+                        width: 94%;
+                    }
+                    #events-text-search{
+                        margin-bottom: 10px;
+                        width:100%;
+                            input{
+                                width:61%;
+                                padding: 0 7%;
+                            }
+                            input[type=button]{
+                               width:25%;
+                            }
+                    }
+                }
+            }
+			.region-content{
+                width: 100%;
+				.block-system{
+					width: 100%;
+					.view-events-listing-view{
+						.view-content{
+							.views-row{
+								.views-field-php{
+									.field-content{
+										.eventscolumn-left{
+											width: 100%;
+										}
+										.eventscolumn-right{
+											width: 100%;
+											float: left;
+										}
+									}
+								}
+								.views-field-php-1{
+									.field-content{
+										.google-map{
+											.viewhide-map{
+												margin-left: 1%;
+												float: right;
+											}
+										}
+									}
+								}
+							}
+						}
+
+					}
+				}
+				.block-views{
+					width: 100%;
+					float: left;
+				}
+			}
+		}
+	}
+
+	/******************************************
+	***   BUSINESS NEWS PAGE AND WHATS NEW  ***
+	******************************************/
+
+	body.page-business-news,
+	body.page-whats-new,
+	body.page-export-news{
+		.wrapper{
+			.region-content{
+				width: 100%;
+			}
+			.region-sidebar-first{
+			    float: left;
+			    width: 100%;
+			}
+		}
+	}
+
+	body.page-rural-export-initiative-news{
+		&.no-sidebars{
+			.wrapper{
+				.region-content{
+					width: 100%;
+					.block-system{
+						.view{
+							.view-content{
+								width: 100%;
+								float: left;
+							}
+							.view-filters{
+								float: left;
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/********************************
+	***   EVENTS PAGE   ****
+	*********************************/
+	body.node-type-event{
+		.wrapper{
+			#titleWrapper{
+				.title{
+					h1{
+						font-size: 28px;
+						letter-spacing: -1.5px;
+					}
+				}
+			}
+			.region-content{
+				width: 100%;
+				.block-system{
+					.node-event{
+						background-color: #fff;
+						padding: 2%;
+						float: left;
+						width: 96%;
+						.node-title{
+							h2{
+								margin: 0;
+								padding: 0;
+								color: #6885a2;
+								font-family: "latoblack",sans-serif;
+								font-weight: normal;
+								font-size: 28px;
+								line-height: 28px;
+								letter-spacing: -1px;
+								margin-bottom: 30px;
+							}
+
+						}
+						.eventslanding-columns{
+							float: left;
+							width: 100%;
+							margin-bottom: 20px;
+							.eventslanding-column-left{
+								float: left;
+								width: 100%;
+								.when{
+									font-family: "latoblack",sans-serif;
+									color: #363636;
+									font-weight: normal;
+									h3{
+										margin: 0;
+										padding: 0;
+										font-family: "latoblack",sans-serif;
+										font-weight: normal;
+										color: #363636;
+										font-size: 18px;
+										margin-bottom: 5px;
+									}
+								}
+								.calendar-icons-mastercontainer{
+									margin-top: 10px;
+									float: left;
+									width: 100%;
+									.calendar-icon-container{
+										float: left;
+										&.calendar-outlook{a{background-color: #f0d124;}}
+										&.calendar-gcal{a{background-color: #44b3e7;}}
+										&.calendar-ycal{a{background-color: #8c30bb;}}
+
+										a{
+											display: block;
+											float: left;
+											margin-right: 10px;
+											height: 15px;
+											width: 15px;
+											img{
+												display: none;
+											}
+										}
+									}
+								}
+								.btn-register{
+									display: block;
+									color: #fff;
+									text-transform: uppercase;
+									font-size: 12px;
+									font-family: "latoblack",sans-serif;
+									background-color: #6784a3;
+									float: left;
+									margin-top: 20px;
+									width: 30%;
+									padding: 20px;
+									text-align: center;
+									&:hover{
+										background-color: darken(#6784a3, 10%)
+									}
+								}
+							}
+							.eventslanding-column-right{
+								float: left;
+								width: 100%;
+								.where{
+									h3{
+										margin: 0;
+										padding: 0;
+										font-family: "latoblack",sans-serif;
+										font-weight: normal;
+										color: #363636;
+										font-size: 18px;
+										margin-bottom: 5px;
+									}
+								}
+								.event-address{
+									font-family: "latoblack",sans-serif;
+									color: #363636;
+									font-weight: normal;
+									margin-bottom: 15px;
+									float: left;
+									width: 100%;
+								}
+								.details{
+									font-family: "latoregular",sans-serif;
+									color: #363636;
+									font-weight: normal;
+									float: left;
+									width: 100%;
+								}
+								.learn-more{
+									.eventslanding-label{
+										font-family: "latoblack",sans-serif;
+										color: #363636;
+										font-weight: normal;
+									}
+								}
+								.contact-info{
+									margin-top: 10px;
+									color: #363636;
+									.eventslanding-label{
+										font-family: "latoblack",sans-serif;
+										color: #363636;
+										font-weight: normal;
+									}
+
+								}
+							}
+
+						}
+						.map-container{
+							float: left;
+							width: 100%;
+						}
+
+					}
+				}
+			}
+		}
+	}
+
+	/**************************
+	***  LINK TO US PAGE   ****
+	***************************/
+	body.page-link-to-us{
+		.linktous-nonmobile-container{display:none;}
+		.mobileOnly{padding:0px 20px;}
+		/*
+		.region.region-content{
+			.block{
+				&.block-system{
+					.linktous-master-page-container{
+						.linktous-nonmobile-container{
+                            .bodycontent-linktous{
+                                .basic-logo-large, .basic-logo-go-small{
+                                    width: auto;
+                                    margin-right: 15px;
+                                    float: left;
+                                }
+                                .basic-logo-small{
+                                    width: auto;
+                                }
+                            }
+							.bodycontent-linktous.tableofcontents{
+								padding-right: 4%;
+								width: 92%;
+							}
+							.link-to-us-index{
+								width: 96%;
+							}
+							.wizard-section-container{
+								.wizard-section{
+									width: 188px;
+								}
+							}
+						}
+						form{
+							.find-widget{
+								.floatleft{
+									width: 75%;
+									.select-country-list,
+									.select-state-list,
+									.select-industry-list{
+										.dk_container{
+											a.dk_toggle, select{
+												width: 200px !Important;
+											}
+										}
+									}
+								}
+								.floatright{
+									float: left;
+									width: 100%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		*/
+	}
+
+
+
+    /*******************************************
+    ***   ACCESS FINANCING RESULTS STYLES   ****
+    ********************************************/
+
+    body.page-access-financing{
+		#block-system-main{
+			.ajax-container{
+				.note-access-financing-container{
+					width: 100%;
+					#note-access-financing {
+						margin: 0;
+					}
+				}
+				.share-export-email-container{
+							display: none;
+				}
+				.wizard-results-wrapper.has-sidebar-true{
+					float: left;
+					padding: 0;
+					.wizard-results-header-container{
+						width: 100%;
+						margin: 0;
+						.wizard-results-header-resultcounts-container{
+							width: 90%;
+							padding-left: 7%;
+							.wizard-results-header-resultcount{
+								float: left;
+							}
+						}
+
+					}
+
+					.wizard-result-sections-container{
+						width: 100% !important;
+						margin: 0;
+						.wizard-result-section{
+							margin-left: 10px;
+							.wizard-result-section-title{
+								//margin-left: 80px;
+							}
+							.yawizard-pagedresults-mastercontainer{
+								.wizard-result-section-result{
+									margin-left: 15px;
+									margin-top: 35px;
+								}
+								.yawizard-pagedresults-pagers {
+									margin-left: 15px;
+								}
+							}
+						}
+					}
+					.wizard-sidebars-container{
+						width: 100%;
+						margin-top: 25px;
+						.wizard-sidebar{
+							width: 100%;
+							margin-bottom: 25px;
+							.wizard-health-sidebar-top-section{
+								width: 100%;
+								.wizard-health-sidebar-title{
+									width: 90%;
+									padding: 5%;
+									margin-left: 0;
+								}
+							}
+							.wizard-sidebarresults-results-container{
+								padding: 20px 3%;
+								width: 94%;
+
+								.view-content{
+									.views-row-odd, .views-row-even{
+										text-align: left;
+										float: left;
+										.views-field-field-vend-phone-number, .views-field-field-vend-fax-number{
+											.field-content{
+												display: inline;
+											}
+										}
+									}
+								}
+							}
+
+							.wizard-health-sidebar-desc{
+								padding: 20px 3%;
+								width: 94%;
+
+							}
+						}
+					}
+				}
+			}
+		}
+    }
+
+	/******************************************************************************************
+	****		RESULTS PAGE STYLES FOR DISASTER ASSISTANCE, FIND GREEN OPPORTUNITIES,		***
+	****		TAXES AND CREDITS, HIRING EMPLOYEES, BEGIN EXPORT							***
+	*******************************************************************************************/
+    body.page-disaster-assistance{
+        .slide{
+            .questions{
+                .wiztag-splashimage{
+                    position: relative;
+                    float: left;
+                    left: auto;
+                    padding: 9px 0;
+                }
+                .splash-icon-image{
+                    margin-left: 16%!important;
+                    position: relative;
+                }
+                .wiztag-splash-title-label{
+                    float: left;
+                    max-width: 52%;
+                }
+            }
+        }
+    }
+	body.page-disaster-assistance, body.page-find-green-opportunities,
+	body.page-taxes-and-credits, body.page-jobcenter-wizard, body.page-find-opportunities, body.page-begin-exporting, body.page-expand-exporting{
+		.ajax-container{
+			width: 100%;
+			float: left;
+			.wizard-results-wrapper{
+				width: 100%;
+				.wizard-results-header-container{
+					width: 100%;
+					.wizard-results-header-resultcounts-container{
+						width: 94%;
+					}
+					.share-export-email-container{
+						display: none;
+					}
+					.wizard-results-header-resultcount-count-0{
+						display: none !important;
+					}
+				}
+				.wizard-result-sections-container{
+					width: 100%;
+					margin-right: 0;
+					.wizard-result-section{
+						padding: 25px 3%;
+						width: 94%;
+
+						.wizard-result-section-title{
+							margin-left: 30px;
+						}
+						.yawizard-pagedresults-mastercontainer{
+							.yawizard-pagedresults-page{
+								.yawizard-pagedresults-result{
+									.wizard-result-section-result{
+										margin-left: 15px;
+										margin-top: 35px;
+										.wizard-result-snippet{
+											word-break: break-word;
+										}
+									}
+								}
+							}
+
+							.yawizard-pagedresults-pagers {
+								margin-left: 15px;
+							}
+						}
+					}
+				}
+				.wizard-sidebars-container{
+					width: 100%;
+					margin-top: 25px;
+					.wizard-sidebar{
+						width: 100%;
+						margin-bottom: 25px;
+						.wizard-health-sidebar-top-section{
+							width: 100%;
+							.wizard-health-sidebar-title{
+								width: 90%;
+								padding: 5%;
+								margin-left: 0;
+							}
+						}
+						.wizard-sidebarresults-results-container{
+							padding: 20px 3%;
+							width: 94%;
+
+							.view-content{
+								.views-row-odd, .views-row-even{
+									text-align: left;
+									float: left;
+									.views-field-field-vend-phone-number, .views-field-field-vend-fax-number{
+										.field-content{
+											display: inline;
+										}
+									}
+								}
+							}
+						}
+
+						.wizard-health-sidebar-desc{
+							padding: 20px 3%;
+							width: 94%;
+
+						}
+						.jobcenters-top-section, .ptac-top-section{
+							.vendors-title, .ptac-title{
+								padding: 30px 8%;
+								width: 84%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+    body.page-begin-exporting{
+        .ajax-container{
+            .wizard-results-wrapper{
+                .wizard-result-sections-container{
+                    width: 94%;
+                    padding: 0 3%;
+                    .wizard-result-section{
+                        .wizard-result-section-subtitle {
+                          margin-left: 0px;
+                        }
+                        .wizard-result-section-icon-container{
+                            width: 60px;
+                        }
+                       .wizard-result-section-title{
+                          margin-left: 0px;
+                       }
+                        .yawizard-pagedresults-mastercontainer{
+                            .yawizard-pagedresults-page{
+                                .yawizard-pagedresults-result{
+                                    .wizard-result-section-result {
+                                        margin-left: 0px;
+                                        margin-top: 20px;
+                                        .wizard-result-titlesnippettags {
+                                           margin-left: 65px;
+                                        }
+                                        .wizard-result-icon-container {
+                                            width: 60px;
+                                            float: left;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+  body.page-expand-exporting{
+    .ajax-container{
+      .wizard-results-wrapper{
+        .wizard-result-sections-container{
+          .wizard-result-section{
+            .wizard-result-section-title {
+              margin-left: 10px;
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+
+  }
+	/****************************
+	***   QUICK FACTS PAGE   ****
+	****************************/
+
+	body.page-quick-facts{
+		.region-content{
+			background-color: #fff;
+			float:left;
+			clear:both;
+			width:94%;
+			padding:3%;
+
+			.view-content {
+				width: 100%;
+				float: left;
+				margin-right: 4%;
+				margin-left: 2%;
+			}
+
+			.view-filters {
+				width: 100%;
+				float: left;
+
+				.form-item{
+					margin-right: 2px;
+					.dk_container {
+						margin-top: 5px;
+
+						.dk_toggle{
+							background: url(/sites/all/themes/bizusa/images/bluearrow.png) no-repeat transparent;
+							background-position: 97%;
+							background-color: #f2f2f2;
+							color: #6885a2;
+						}
+						.dk_options_inner{
+							z-index: 9;
+						}
+						#dk_container_edit-field-publishrange-value-op{
+
+
+						}
+					}
+
+					.date-day{
+						.dk_options_inner{
+							height: 315px;
+						}
+					}
+					#dk_container_edit-field-publishrange-value-op {
+						width: 280px;
+						.dk_toggle{
+								width: 260px !important;
+							}
+						.dk_options{
+							width: 280px;
+						}
+					}
+				}
+				.views-exposed-widget{
+					float: none;
+				}
+
+			}
+
+		}
+
+	}
+
+	/********************************
+	***   TRAINING MATERIALS PORTAL   ****
+	*********************************/
+	body.page-training-materials-portal{
+		.wrapper{
+			#titleWrapper{
+				.title{
+					h1{
+						font-size: 28px;
+						letter-spacing: -1.5px;
+					}
+				}
+			}
+			.region-content{
+				.block-system{
+					#training-materials-portal-page{
+						background-color: #fff;
+						float: left;
+						width: 100%;
+						.training-materials-message{
+							font-family: "latoblack_italic",sans-serif;
+							font-weight: normal;
+							font-size: 13px;
+							color: #b0b0b0;
+							text-align: center;
+							padding-top: 20px;
+							padding-left: 5%;
+							padding-right: 5%;
+
+						}
+						.training-materials-main-links-container{
+							float: left;
+							clear: both;
+							width: 90%;
+							margin: 20px 5%;
+							a.main-links-item{
+								display: block;
+								float: left;
+								width: 25%;
+								margin-left: 5%;
+								img{
+									width: 100%;
+									margin: 0 auto;
+									display: block;
+									margin-bottom: 10px;
+								}
+								p{
+									margin: 0;
+									padding: 0;
+									font-weight: normal;
+									font-family: "latoblack",sans-serif;
+									font-size: 100%;
+									line-height: 12px;
+									color:#6885a2;
+									letter-spacing: 0px;
+									text-align: center;
+								}
+							}
+						}
+						.view-all{
+							float: left;
+							width: 100%;
+							margin: 10px 0px 25px 0px;
+							a{
+								display: block;
+								text-align: left;
+								color: #6885a2;
+								font-weight: normal;
+								font-size: 12px;
+								text-transform: uppercase;
+								width: 35%;
+								padding: 15px 10px 15px 5%;
+								margin: 0 auto;
+								background: url("../images/training/viewall-right.png") no-repeat #eff2f5;
+								background-position: 85%;
+							}
+						}
+					}
+					.training-materials-portal-dualarea{
+						float: left;
+						width: 100%;
+						background-color: transparent;
+						color: #fff;
+						border-top: none;
+						.dualarea-left{
+							float: left;
+							width: 100%;
+							border-right: none;
+							background-color: #6885a2;
+							border-top: 30px solid #EFF2F5;
+							.dualarea-title{
+								width: 90%;
+								clear: both;
+								margin: 15px 5% 10px 5%;
+								float: left;
+								img{
+									width: 15%;
+									float: left;
+									margin: 0;
+								}
+								p{
+									margin: 5% 0% 0 2%;
+									padding: 0;
+									float: left;
+									width: 80%;
+									font-family: "latoblack_italic",sans-serif;
+									font-size: 18px;
+									color: #97e8c1;
+									font-weight: normal;
+									text-align: left;
+									line-height: 18px;
+								}
+							}
+							ul{
+								width: 98%;
+								float: left;
+								margin: 1%;
+								padding: 0;
+								li{
+									list-style: none;
+									width: 100%;
+									margin-bottom: 3px;
+									a{
+										color: #fff;
+										font-family: "latoblack_italic",sans-serif;
+										font-weight: normal;
+										font-size: 16px;
+										background-color: #839bb3;
+										width: 90%;
+										display: block;
+										padding: 18px 5%;
+									}
+								}
+							}
+						}
+						.dualarea-right{
+							float: right;
+							width: 100%;
+							background-color: #6885a2;
+							border-top: 30px solid #EFF2F5;
+							padding-bottom: 20px;
+							.right-message{
+								font-family: "latoblack_italic",sans-serif;
+								font-size: 14px;
+								color: #eff2f5;
+								font-weight: normal;
+								padding: 20px 5% 3% 5%;
+							}
+							h2{
+								margin: 0;
+								padding: 0;
+								font-family: "latoblack_italic",sans-serif;
+								font-size: 18px;
+								color: #97e8c1;
+								font-weight: normal;
+								line-height: 18px;
+								padding: 2% 5%;
+							}
+							input.auto-fill-zip-code{
+								background-color: #fff;
+								cursor: text;
+								color: #999999;
+								font-size: 12px;
+								font-weight: normal;
+								width: 65%;
+								font-family: "latoblack_italic",sans-serif;
+								margin-left: 5%;
+							}
+							input.resevents-titlebar-controle-go{
+								text-transform: uppercase;
+								font-size: 14px;
+								&:hover{
+									background-color: darken(#F75B49, 10%)
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/*****************************
+	***   SUBSCRIBE  ***
+	******************************/
+
+	body.page-subscribe{
+		.region-content{
+			.block-system{
+				#quick_subscribe_new{
+					ol.form{
+						form#subscribeSubmit{
+							li.email_fields{
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/********************************
+	***   ABOUT US PAGE   ****
+	*********************************/
+	body.page-about-us{
+		.wrapper{
+			#titleWrapper{
+				.title{
+					h1{
+						font-size: 28px;
+						letter-spacing: -1.5px;
+					}
+				}
+			}
+			.region-content{
+				.block-system{
+					.aboutus-contentContainer{
+						font-size: 18px;
+						.aboutus-message{
+							padding: 20px 0px 0px 0px;
+							float: left;
+							.left-column{
+								width: 80%;
+								float: left;
+								padding:0% 10% 5% 10%;
+							}
+
+							p.highlight{
+								width: 91%;
+								font-size: 25px;
+								padding: 4% 4.5%;
+								letter-spacing: -.5px;
+								margin: 10px 0px;
+								text-align: left;
+							}
+
+							.right-column{
+								float: left;
+								width: 90%;
+								padding:0% 5%;
+								border-top:50px solid #EFF2F5;
+								ul#logos-group{
+									padding: 0px;
+									li{
+										margin: 17px;
+										float:left;
+									}
+								}
+							}
+
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/*********************
+	***   BLOG PAGE   ****
+	*********************/
+	body.page-blog{
+		.region-content{
+			width: 100%;
+			margin-right: 0;
+
+			#block-system-main {
+				width: 100%;
+				float: left;
+				.view-blog{
+					.view-content{
+						.blog-item-container{
+							.img-businessusa,.img-whitehouse, .img-smallbusinessadministration, .img-departmentofcommerce{
+								width: 65px;
+								height: 60px;
+								margin-right: 10px;
+							}
+							.img-businessusa{
+								background: url("/sites/all/themes/bizusa/images/businessusa-tab.png") no-repeat;
+							}
+							.img-whitehouse{
+								background: url("/sites/all/themes/bizusa/images/whitehouse-tab.png") no-repeat;
+                                background-position: 0 5px;
+							}
+							.img-smallbusinessadministration{
+								background: url("/sites/all/themes/bizusa/images/smallbusinessadministration-tab.png") no-repeat;
+                                background-position: 0 10px;
+							}
+							.img-departmentofcommerce{
+								background: url("/sites/all/themes/bizusa/images/departmentofcommerce.png") no-repeat;
+                                background-position: 10px;
+							}
+							.businessusa, .whitehouse, .smallbusinessadministration, .departmentofcommerce {
+								width: 100%;
+								float: none;
+								margin-left: 0;
+
+							}
+						}
+					}
+					.item-list{
+						.pager{
+							li{
+								margin: 0;
+							}
+						}
+					}
+
+				}
+			}
+		}
+		.region-sidebar-first{
+			width: 100%;
+			#block-views--exp-blog-page {
+				#views-exposed-form-blog-page{
+					.views-exposed-form{
+						.views-exposed-widgets{
+							.views-exposed-widget{
+								.views-widget{
+									.form-type-date-select{
+										#edit-field-blog-submit-dt-value-value{
+											.form-item-field-blog-submit-dt-value-value-month{
+												width: 120px;
+												margin-right: 5px;
+												.date-month{
+													.dk_container{
+														a.dk_toggle.dk_label{
+															width: 100px !important;
+														}
+														.ui-datepicker-inline{
+															display: none;
+														}
+													}
+												}
+											}
+											.form-item-field-blog-submit-dt-value-value-year{
+												width: 85px;
+												.date-year{
+													.dk_container{
+														a.dk_toggle.dk_label{
+															width: 65px !important;
+														}
+														.ui-datepicker-inline{
+															display: none;
+														}
+													}
+												}
+											}
+										}
+										.ui-datepicker{
+											display: none !important;
+										}
+									}
+									.form-item-field-blog-category-value{
+
+										.form-checkboxes{
+											.bef-checkboxes{
+												.form-item {
+													label{
+														width: 78%;
+													}
+													.prettycheckbox{
+														a.checked {
+															background-position: 0px -17px;
+															position: relative;
+															top: 0px;
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	/*******************************************
+	***   START A BUSINESS RESULTS STYLES   ****
+	********************************************/
+	body.page-start-a-business{
+		.uses-ajax{
+			.ajax-inuse{
+				margin-top: 0px;
+				background-color: #eff2f5;
+				.wizard-download-share-container{
+					display: none;
+				}
+				.share-export-email-container{
+					display: none;
+				}
+
+				.startbiz-result-global-message{
+					padding: 3%;
+					width: 94%;
+					margin: 0;
+					margin-bottom: 5px;
+				}
+				.wizard-collapsible-section-container{
+					width: 100%;
+					margin: 5px 0;
+
+
+
+					.wizard-collapsible-section-contents{
+						padding: 3%;
+						width: 94%;
+
+						.business-licenses-and-permits-container{
+							.business-licenses-and-permits-welcometext,	.build-business-plan-textfirst{
+								margin-right: 0px;
+							}
+
+							.sbwiz-lap-rootsection{
+								margin-right: 0px;
+							}
+							.sbwiz-lap-rootsection-last{
+								margin-right: 0px;
+							}
+						}
+
+						.build-business-plan-container{
+							.build-business-plan-content {
+								width: 100%;
+								margin-right: 0px;
+								.build-business-plan-learnmoretext{
+									width: 100%;
+									margin-right: 0px;
+									margin-bottom: 25px;
+								}
+							}
+							#buildyourbusinessplanarticles{
+								width: 100%;
+								.start-a-business-article-result {
+									.wizard-result-title{
+										padding: 4%;
+										width: 92%;
+									}
+								}
+								.getStartedButton{
+									padding: 25px 0;
+									width: 180px;
+								}
+							}
+						}
+
+						.sbdcscore-offices-container-container{
+							.sbdcscore-offices-container{
+								width: 100%;
+								border: none;
+								margin-bottom: 25px;
+
+								.contextual-links-region{
+									padding: 10px;
+									height: auto;
+									position: initial;
+									margin-bottom: 15px;
+									.view-footer {
+										margin-top: 20px;
+										float: left;
+										margin-bottom: 20px;
+									}
+								}
+							}
+						}
+
+						#businesslicensesandpermitsarticles, #conductmarketresearcharticles, #articlesrecommendedforyoutopratedarticles, #articlesrecommendedforyoubasedonanswersarticles{
+							border: none;
+							&.hastwosections{
+								width: 100%;
+								.sbarticles-content{
+									min-height: 0;
+								}
+							}
+						}
+
+						.btn-back-to-top{
+							display: none;
+						}
+
+					}
+				}
+			}
+
+		}
+	}
+
+
+	/********************************
+   ***   EXPORT PAGE   ****
+   *********************************/
+    body.page-export.pagepath-export .logoSearchWrapper .searchWrapper .sitewide-logo-and-search input#sitewide-search-input,
+    body.page-export-portal .logoSearchWrapper .searchWrapper .sitewide-logo-and-search input#sitewide-search-input {
+  		width: 73%;
+	}
+    body.page-export.pagepath-export #block-system-main {
+        background-color: transparent;
+        .export-container {
+            min-height: 0px;
+            margin-left: 0px;
+        }
+        .export-stage {
+            position: static;
+            margin: 0px;
+            padding:0px;
+            width:100%;
+        }
+        .export-learn-stage-image {
+            width: 100%;
+            float: none;
+            clear: both;
+            border-top: 5px solid #eff2f5;
+            display:table;
+            margin-right:0px;
+            a{
+            	display:table-cell;
+            	vertical-align: middle;
+            	height:100%;
+            	width:90%;
+            	padding: 0px 5%;
+            	position:relative;
+                float: left;
+            	span{
+            		display:table-cell;
+            		vertical-align: middle;
+            		line-height: normal !important;
+            		text-align: left !important;
+            		padding-right:30px;
+                    padding-top:30px;
+                    width:33%;
+                    float:left;
+                    margin-left:30%;
+                    height:50px !important;
+            	}
+            	img{
+            		position:absolute;
+            		right:5%;
+            		top:25%;
+                    float:left;
+            	}
+            }
+        }
+        .export-stage-mobilemessage + .export-learn-stage-image{
+        	border-top:0px;
+        }
+        .exporterdashboard-mastermastercontainer{
+            .export-container{
+                background:#fff;
+            }
+            .export-menu{
+                position:relative;
+                width:100%;
+                float:left;
+                margin-left:0;
+                background:initial;
+                padding-bottom:0;
+                display:none;
+                .export-menu-table{
+                    float:left;
+                    width:94%;
+                    padding:3%;
+                    background-color:#fff;
+                    .export-menu-item-container{
+                        float:left;
+                        width:33.33%;
+                        a{
+                            margin:0;
+                            width:100%;
+                            .selectedcategoryarrow{
+                                display:none !important;
+                            }
+                        }
+                        #export-learn-backimage{
+                            background: #fff url('/sites/all/themes/bizusa/images/export_learn_more_grey.png') no-repeat center top;
+                        }
+                        #export-learn-backimage:hover{
+                            background: #fff url('/sites/all/themes/bizusa/images/export_learn_more_blue.png') no-repeat center top;
+                        }
+                        #export-comply-backimage{
+                            background: #fff url('/sites/all/themes/bizusa/images/export_comply_with_the_law_grey.png') no-repeat center top;
+                        }
+                        #export-comply-backimage:hover{
+                            background: #fff url('/sites/all/themes/bizusa/images/export_comply_with_the_law_blue.png') no-repeat center top;
+                        }
+                        #export-assistance-backimage{
+                            background: #fff url('/sites/all/themes/bizusa/images/export_seek_assistance_grey.png') no-repeat center top;
+                        }
+                        #export-assistance-backimage:hover{
+                            background: #fff url('/sites/all/themes/bizusa/images/export_seek_assistance_blue.png') no-repeat center top;
+                        }
+                    }
+                }
+            }
+        }
+		.exporterdashboard-premastercontainer{
+			width:100%;
+            .export-mobileresilts-welcomemsg,
+            .export-stage-mobilemessage{
+                padding:10px;
+            }
+
+			.exporterdashboard-major-container{
+                width:100%;
+                background-color:#fff;
+                .exporterdashboard-major-item{
+                    float:left;
+                    height:auto;
+                    width:33.33%;
+                    h2{
+                        a{
+                            text-align:center;
+                            color:#6885a2;
+                            font-size:18px;
+                            padding:82px 1% 0;
+                            background-color:#fff;
+                            width:58%;
+                            vertical-align: initial;
+                        }
+                    }
+                }
+                #learn-link a{
+                    background: #fff url('/sites/all/themes/bizusa/images/export_learn_more_grey.png') no-repeat center 25px;
+                }
+                #learn-link a:hover{
+                    background: #6885a2 url('/sites/all/themes/bizusa/images/export_learn_more_white.png') no-repeat center 25px;
+                    color:#fff;
+                }
+                #comply-link a{
+                    background: #fff url('/sites/all/themes/bizusa/images/export_comply_with_the_law_grey.png') no-repeat center 25px;
+                }
+                #comply-link a:hover{
+                    background: #6885a2 url('/sites/all/themes/bizusa/images/export_comply_with_the_law_white.png') no-repeat center 25px;
+                    color:#fff;
+                }
+                #seek-link a{
+                    background: #fff url('/sites/all/themes/bizusa/images/export_seek_assistance_grey.png') no-repeat center 25px;
+                }
+                #seek-link a:hover{
+                    background: #6885a2 url('/sites/all/themes/bizusa/images/export_seek_assistance_white.png') no-repeat center 25px;
+                    color:#fff;
+                }
+			}
+			.exporterdashboard-minor-container{
+				width:100%;
+				margin-left:0px;
+				margin-top:40px;
+				li{
+					border-top: 5px solid #eff2f5;
+					border-bottom:none;
+				}
+				li:first-child{
+					border-top:none;
+				}
+			}
+			.exporterdashboard-exportnews-container{
+				width:90%;
+				padding:25px 5%;
+				background-color:#fff;
+				margin-left:0px;
+				margin-top:40px;
+				min-height: 0px;
+			}
+			.exporterdashboard-useacsevents-container{
+				width:100%;
+				margin-top:40px;
+				background-color:#fff;
+                .exporterdashboard-useacsevents-locationselect-popup-trigger{
+                    display:none;
+                }
+			}
+			.exporterdashboard-useacsevents-head{
+				width:90%;
+				padding-left:5%;
+				padding-right:5%;
+			}
+			.exporterdashboard-exportingtools-container{
+				width:90%;
+				padding-left:5%;
+				padding-right:5%;
+				margin-left:0px;
+				height:auto !important;
+				background-color: #d7f2d2;
+				margin-top:40px;
+			}
+		}
+        .export-information-sections-mastercontainer {
+            width:auto;
+            float: none;
+            padding: 0px;
+            margin-left: 0px;
+            border-bottom: 35px solid #eff2f5;
+            .export-information-section-title{
+            	padding:0px !important;
+            	margin:0px !important;
+            	height:100%;
+            	width:100%;
+            	display:table;
+            	a{
+            		display:table-cell;
+            		vertical-align: middle;
+            		height:100%;
+            		width:90%;
+            		padding:0px 5%;
+            	}
+            }
+            .export-information-section-container {
+                float: none;
+                width: auto;
+                margin-right: 0px;
+                width:100%;
+                height:50px;
+                img{
+                    margin-top:18px;
+                }
+                .export-information-section-links-link-container{
+                    img{
+                        margin-left:15px;
+                        float:left;
+                    }
+                    a{
+                        float:left;
+                        width:83%;
+                        margin-top:18px;
+                    }
+                }
+            }
+        }
+        .export-information-sections-mastercontainer.showing-popup-results {
+            .export-information-section-title {
+                display: none;
+            }
+            .export-information-section-container {
+                width: auto;
+                height: auto;
+            }
+        }
+        .export-information-section-container{
+        	margin:0px;
+        	padding:0px;
+        	width:100%;
+        }
+        .export-information-section-links-mastercontainer{
+        	width:100% !important;
+        	background-color: #E2E2E2 !important;
+        }
+        .export-information-section-links-mastercontainer li:hover{
+        	background-color: transparent !important;
+        }
+        .export-information-section-links-mastercontainer li{
+        	display:table;
+        	height:50px;
+        	width:100% !important;
+        	padding:0px !important;
+        }
+        .export-information-section-links-mastercontainer li a{
+        	display:table-cell;
+        	vertical-align: middle;
+        	color: #1a4168 !important;
+        	width:90%;
+        	padding:0px 5%;
+        }
+
+    }
+    body.page-export.page-exportportal{
+        #titleWrapper{
+            .title{
+                h1{
+                    margin:18px;
+                    min-height:initial;
+                }
+            }
+        }
+        #block-system-main{
+            width:100%;
+            .exportdotgov-landingpage-mastercontainer{
+                width:100%;
+                float:left;
+                .export-headerandshareplus{
+                    display:none;
+                }
+                .exportdotgov-landingpage-maincontent{
+                    width:100%;
+                    .export-portal-menu{
+                        background-image:none;
+                        width:100%;
+                        position:relative;
+                        float:left;
+                        margin:0;
+                        .export-menu-table{
+                            background-color:#fff;
+                            float:left;
+                            width:94%;
+                            padding:3%;
+                            .export-menu-item-container{
+                                float:left;
+                                width:33.33%;
+                                a{
+                                    float:left;
+                                    width:92%;
+                                }
+                                #export-learn-backimage{
+                                    background: #fff url('/sites/all/themes/bizusa/images/export_learn_more_grey.png') no-repeat center top;
+                                }
+                                #export-learn-backimage:hover{
+                                    background: #fff url('/sites/all/themes/bizusa/images/export_learn_more_blue.png') no-repeat center top;
+                                    color:#fff;
+                                }
+                                #export-comply-backimage{
+                                    background: #fff url('/sites/all/themes/bizusa/images/export_comply_with_the_law_grey.png') no-repeat center top;
+                                }
+                                #export-comply-backimage:hover{
+                                    background: #fff url('/sites/all/themes/bizusa/images/export_comply_with_the_law_blue.png') no-repeat center top;
+                                    color:#fff;
+                                }
+                                #export-assistance-backimage{
+                                    background: #fff url('/sites/all/themes/bizusa/images/export_seek_assistance_grey.png') no-repeat center top;
+                                }
+                                #export-assistance-backimage:hover{
+                                    background: #fff url('/sites/all/themes/bizusa/images/export_seek_assistance_blue.png') no-repeat center top;
+                                    color:#fff;
+                                }
+                                .selectedcategoryarrow{
+                                    display:none;
+                                }
+
+                            }
+                        }
+                    }
+                    .export-section-container{
+                        margin-left:0;
+                        width:100%;
+                        .export-section-topmenu{
+                            margin-left:0;
+                            float:left;
+                            width:100%;
+                            .export-learn-stage-image{
+                                width:100%;
+                                margin-left:0;
+                                a{
+                                    float:left;
+                                    margin-left:33%;
+                                    span{
+                                        float:left;
+                                    }
+                                    img{
+                                        float:left;
+                                        margin-top:19px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .exportdotgov-landingpage-maincontent-inner{
+                        width:94%;
+                        margin:0;
+                        background-color:#fff;
+                        padding:10px 3%;
+                    }
+                    .export-section-bottommenu{
+                        clear:both;
+                        .export-learn-stage-image{
+                            background: #6885a2;
+                            padding: 15px 3%;
+                            margin-bottom:5px;
+                            float:left;
+                            width:94%;
+                            a{
+                                color:#fff;
+                                float:left;
+                                margin-left:33%;
+                                span{
+                                    float:left;
+                                    margin-top:8px;
+                                }
+                                img{
+                                    float:left;
+                                }
+                            }
+                        }
+                    }
+                }
+                .exportdotgov-landingpage-relatedcontent-container{
+                    width:100%;
+                    .exportdotgov-landingpage-relatedcontent-titlebar{
+                        color:#6885a2;
+                        font-family:"latoblack_italic";
+                        padding:15px 3%;
+                    }
+                    .exportportal-hilight{
+                        font-family:'lato';
+                        text-decoration:initial;
+                    }
+                }
+                .exportdotgov-landingpage-othertopics-container{
+                    width:100%;
+                    .exportdotgov-landingpage-othertopics-titlebar{
+                        color:#6885a2;
+                        font-family:"latoblack_italic";
+                        padding:15px 3%;
+                    }
+                }
+            }
+        }
+    }
+    body.page-export-portal.page-exportportal{
+        #sitewide-search-input{
+            width:64% !important;
+        }
+        .exportdotgov-landingpage-maincontent{
+            width:auto;
+            .exportdotgov-landingpage-maincontent-inner{
+                width: auto;
+                margin: 20px;
+            }
+            .export-portal-menu{
+                position:relative;
+                width:100%;
+                float:left;
+                margin-left:0;
+                background:initial;
+                padding-bottom:0;
+                .export-menu-table{
+                    float:left;
+                    width:94%;
+                    padding:3%;
+                    background-color:#fff;
+                    .export-menu-item-container{
+                        float:left;
+                        width:33.33%;
+                        a{
+                            margin:0;
+                            width:100%;
+                            .selectedcategoryarrow{
+                                display:none !important;
+                            }
+                        }
+                        #export-learn-backimage{
+                            background: #fff url('/sites/all/themes/bizusa/images/export_learn_more_grey.png') no-repeat center top;
+                        }
+                        #export-learn-backimage:hover{
+                            background: #fff url('/sites/all/themes/bizusa/images/export_learn_more_blue.png') no-repeat center top;
+                        }
+                        #export-comply-backimage{
+                            background: #fff url('/sites/all/themes/bizusa/images/export_comply_with_the_law_grey.png') no-repeat center top;
+                        }
+                        #export-comply-backimage:hover{
+                            background: #fff url('/sites/all/themes/bizusa/images/export_comply_with_the_law_blue.png') no-repeat center top;
+                        }
+                        #export-assistance-backimage{
+                            background: #fff url('/sites/all/themes/bizusa/images/export_seek_assistance_grey.png') no-repeat center top;
+                        }
+                        #export-assistance-backimage:hover{
+                            background: #fff url('/sites/all/themes/bizusa/images/export_seek_assistance_blue.png') no-repeat center top;
+                        }
+                    }
+                }
+            }
+        }
+        .sidebars-container{
+            width:90%;
+            padding: 0 5%;
+            .exportdotgov-landingpage-othertopics-container{
+                width: 100%;
+            }
+        }
+    }
+    .wrapper{
+        #shareWidget.mobile-only.mobile-share-icons{
+            height:auto;
+            width:auto;
+            margin-bottom:15px;
+            padding:0;
+            .sharewidget-popup{
+                position:relative;
+                background: transparent;
+                top:0;
+                height:auto;
+                width:auto;
+                a{
+                    height: 37px;
+                    padding:0;
+                    width:45px;
+                }
+                .email{
+                    background: transparent url('/sites/all/themes/bizusa/images/share_mail_grey.png') no-repeat;
+                }
+                .facebook{
+                    background: transparent url('/sites/all/themes/bizusa/images/share_fb_grey.png') no-repeat;
+                }
+                .twitter{
+                    background: transparent url('/sites/all/themes/bizusa/images/share_twitter_grey.png') no-repeat;
+                }
+                .linkedin{
+                    background: transparent url('/sites/all/themes/bizusa/images/share_link_grey.png') no-repeat;
+                    width:37px;
+                }
+            }
+        }
+    }
+
+    /******************
+	FBO Open Widget - Add Opportunity Page
+	*******************/
+
+
+	body.page-fboopen-widget-add-opportunity{
+		#titleWrapper{
+			.title{
+				h1{
+					min-height: initial;
+					padding-top:10px;
+					padding-bottom: 10px; 
+				}
+			}
+		}
+		.region-content #block-system-main #opportunity-content-container{
+			.row-container{
+				.leftcol{
+					width: 100%;
+					float: left;
+				}
+				.rightcol{
+					input[type="text"],
+					input[type="input"],
+					textarea{
+						margin-top: 10px;
+						width: 70%;
+					}
+
+					#dk_container_sltStatelist {
+						.dk_toggle{
+							margin-top: 10px;
+						}
+					}
+				}
+			}
+			#actionButtons{
+				width: 100%;
+			}
+
+		}
+		#colorbox{
+			width: 95% !important;
+			min-width: auto;
+			min-width: initial;
+			margin-left: 2%;
+			#cboxWrapper{
+				width: 100% !important;
+				min-width: auto;
+				min-width: initial;
+				#cboxContent{
+					width: 100% !important;
+					min-width: auto;
+					min-width: initial;
+					#cboxLoadedContent{
+						width: 94% !important;
+						min-width: auto;
+						min-width: initial;
+						padding-left: 3%;
+						padding-right: 3%;
+						padding-bottom: 55px;
+					}
+				}
+			}
+		}
+		
+		
+		
+
+	}
+
+
+
+	/******************
+	Browse Regulatinos
+	*******************/
+	body.page-browseregulations{
+	    .wizard-result-section{
+	        h3{
+	            width:71%;
+	        }
+	        .wizard-result-section-result{
+	            width:72%;
+	            margin-left:26% !important;
+	        }
+	        .wizard-result-section-icon-container{
+	            margin: 0 2% !important;
+	            width:74px !important;
+	            .wizard-result-section-icontitle{
+	                word-break: normal !important;
+	            }
+	        }
+	        .wizard-result-snippet{
+	            width: 97%;
+	            word-break: break-word;
+	        }
+
+	    }
+
+	}
+
+
+
+
+	/**********************************
+	***   International Locations   ***
+	**********************************/
+	body.page-international-locations{
+		.region-content{
+			ul.countrylist-mastercontainer{
+				li{
+					width:50%;
+				}
+			}
+		}
+	}
+
+
+    /**********************************
+    ***   MICRO SITE   ***
+    **********************************/
+    body.page-micro-site{
+        .region-content {
+            .mapcontainer-tablet{
+                display: none;
+             }
+            .mapcontainer-desktop{
+               display: none;
+            }
+            .stateslist-container {
+                ul{
+
+                    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+                    -moz-column-count: 1; /* Firefox */
+                    column-count: 1;
+
+                    &.states-list-has-no-css3{
+                      width: 100%;
+                    }
+                }
+            }
+        }
+
+        /**********************************
+        ***   MICRO SITE LANDING PAGE  ***
+        **********************************/
+        &.page-micro-site-state-resource-landing, &.page-micro-site-ownership-landing{
+
+            .region-content {
+                background-color: #eff2f5;
+                width: 100%;
+                padding: 0;
+                .microsite-sections-container{
+                    width: 94%;
+                    margin-right: 0;
+                    padding: 3%;
+                    margin-bottom: 10px;
+                    .item-list{
+                        .pager{
+                            li{
+                                float: left;
+                                padding: 0;
+                                margin: 4px;
+                            }
+                        }
+                    }
+                }
+            .microsite-sidebars-container{
+                width: 100%;
+                .microsite-sidebar{
+                    .microsite-sidebar-title-container{
+                        .microsite-sidebar-title{
+                            width: 94%;
+                            padding: 20px 3%;
+                        }
+
+                    }
+                    .microsites-sidebarresults-results-container{
+                        padding: 15px 3%;
+                        width: 94%;
+                    }
+                }
+            }
+          }
+        }
+
+
+    }
+
+  /**********************
+Veterans Wizard
+**********************/
+  body.page-veterans{
+    .ajax-container{
+      .wizard-results-wrapper.has-sidebar-true{
+
+        .wizard-result-sections-container{
+
+          width: 100%;
+          margin-bottom: 15px;
+          .note-veteran-container{
+            #note-veteran {
+              .btn-close{
+                left: 95%;
+                bottom: 92%;
+              }
+            }
+          }
+
+          .wizard-result-section{
+            margin: 3%;
+            .wizard-result-section-title{
+              padding: 15px 3%;
+              .wizard-result-section-number{
+                float: left;
+              }
+              .actual-title {
+                display: block;
+                width: 60%;
+                float: left;
+              }
+              .wizard-result-section-slidingindicator {
+                margin-right: 3%;
+                margin-top: 15px
+              }
+            }
+            .yawizard-pagedresults-mastercontainer{
+              margin-left:0px;
+              padding: 15px;
+            }
+          }
+        }
+
+        .wizard-sidebars-container{
+          width: 100%;
+          .share-export-email-container{
+            display: none;
+          }
+
+          .wizard-sidebar{
+            margin-bottom: 10px;
+            width: 100%;
+            float: left;
+            .wizard-sidebar-top-section{
+              width: 100%;
+              background-color: #E2E2E2;
+              .wizard-sidebar-title{
+                font: 13px 'latoblack', sans-serif;
+                width: 84%;
+                padding: 20px 8%;
+                font-size: 13px;
+                text-transform: uppercase;
+                color: #5C5C5C;
+                margin-left: 0;
+
+              }
+            }
+            .wizard-sidebarresults-results-container{
+              padding: 15px 3%;
+              background-color: #ffffff;
+              width: 94%;
+              float: left;
+              .dialhelp{
+                margin-bottom: 25px;
+              }
+              .dialhelp, .sidebar-subheader{
+                .dial-img, .subheader-img {
+                  float: left;
+                  margin-right: 5px;
+                  display: inline-block;
+                }
+                .dial-text {
+                  display: inline-block;
+                  line-height: 25px;
+                  font-family: latoblack;
+                  font-size: 14px;
+                  letter-spacing: -0.5px;
+                }
+                .subheader-text {
+                  font-family: latoblack;
+                  font-size: 14px;
+                  letter-spacing: -0.5px;
+                }
+              }
+
+
+              .sharewidget-popup-body{
+                display: none;
+              }
+              .entered-zipcode {
+                padding: 0px 15px 0px 30px;
+                .enter-zip{
+                  width: 90px;
+                  border: 1px solid #eff2f5 !important;
+                  margin-right: 5px;
+                }
+              }
+              .loadingspinner{
+                float: left;
+                img{
+                  margin-left: 35%;
+                  margin-top: 15px;
+                }
+              }
+              .sidebar-results {
+                float: left;
+                padding: 0px 15px;
+                margin-top: 20px;
+
+                .view-footer{
+                  .sabw-sbdc-viewall {
+                    width: 100px;
+                    margin-left: 15px;
+                    margin-top: 15px;
+                    text-align: center;
+                    display: block;
+                    border: 0;
+                    border-radius: 0;
+                    background-color: #15567B;
+                    color: white;
+                    padding: 15px;
+                    text-decoration: none;
+                  }
+                }
+              }
+
+              .view-content{
+                .views-row-odd, .views-row-even{
+                  text-align: left;
+                  float: left;
+                  .views-field-field-vend-phone-number, .views-field-field-vend-fax-number{
+                    .field-content{
+                      display: inline;
+                    }
+                  }
+                }
+              }
+            }
+
+
+          }
+        }
+      }
+    }
+  }
+
+
+
+}
+

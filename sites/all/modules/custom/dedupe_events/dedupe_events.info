@@ -1,5 +1,0 @@
-name = Dedupe Events
-description = Cron hook that Dedupes event content (occurs from the import feeds)
-package = REI
-core = 7.x
-files[] = dedupe_events.module

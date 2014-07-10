@@ -1,5 +1,0 @@
-name = YA Wizard (Yet Another Wizard Implementation)
-description = Yet Another Wizard Implementation
-package = REI
-core = 7.x
-files[] = ya_wizard.module
